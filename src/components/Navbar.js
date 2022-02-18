@@ -3,34 +3,34 @@ import './Navbar.css'
 function Navbar() {
   return (
     <div>
-      <header class="header" id="header">
-        <a href="#" class="logo">
-          <i class="fas fa-mask"></i>MaskCoder
+      <header className="header" id="header">
+        <a href="#" className="logo">
+          <i className="fas fa-mask"></i>MaskCoder
         </a>
 
-        <nav class="navbar">
+        <nav className="navbar">
           <a href="#header">home</a>
           <a href="#services">services</a>
           <a href="#portfolio">projects</a>
           <a href="#contact">contact</a>
         </nav>
 
-        <div id="menu-btn" class="fa-solid fa-bars fa-2x"></div>
+        <div id="menu-btn" className="fa-solid fa-bars fa-2x"></div>
       </header>
 
-      <section class="hero">
-        <div class="hero-content">
-          <h1 class="hero-heading">Welcome to Jagriti.</h1>
+      <section className="hero">
+        <div className="hero-content">
+          <h1 className="hero-heading">Welcome to Jagriti.</h1>
           {/* <p>Best websites for developing companies.</p> */}
         </div>
       </section>
 
-      <section class="services" id="services">
+      <section className="services" id="services">
         <h1>About Us</h1>
-        <div class="services-box">
-          <div class="box">
-            <i class="fas fa-code fa-2x"></i>
-            <div class="box-content">
+        <div className="services-box">
+          <div className="box">
+            <i className="fas fa-code fa-2x"></i>
+            <div className="box-content">
               <h3>Web Development</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
@@ -39,9 +39,9 @@ function Navbar() {
               </p>
             </div>
           </div>
-          <div class="box">
-            <i class="fas fa-pencil fa-2x"></i>
-            <div class="box-content">
+          <div className="box">
+            <i className="fas fa-pencil fa-2x"></i>
+            <div className="box-content">
               <h3>Web Design</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
@@ -50,9 +50,9 @@ function Navbar() {
               </p>
             </div>
           </div>
-          <div class="box">
-            <i class="fas fa-shopping-cart fa-2x"></i>
-            <div class="box-content">
+          <div className="box">
+            <i className="fas fa-shopping-cart fa-2x"></i>
+            <div className="box-content">
               <h3>E-commerce Web Design</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
