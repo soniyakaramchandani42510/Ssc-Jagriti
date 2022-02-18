@@ -9,10 +9,9 @@ function Navbar() {
         </a>
 
         <nav class="navbar">
-          <a href="#header">home</a>
-          <a href="#services">services</a>
-          <a href="#portfolio">projects</a>
-          <a href="#contact">contact</a>
+          <a href="#header">About</a>
+          <a href="#services">Events</a>
+          <a href="#portfolio">Contacts</a>
         </nav>
 
         <div id="menu-btn" class="fa-solid fa-bars fa-2x"></div>
