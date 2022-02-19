@@ -22,7 +22,9 @@ html {
 section {
   padding: 1rem 5%;
 }
-
+.nav-item{
+  margin-right: 40px;
+}
 header {
   position: sticky;
   top: 0;
