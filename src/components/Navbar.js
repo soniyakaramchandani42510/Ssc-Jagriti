@@ -1,8 +1,10 @@
 import React from "react";
 import './Navbar.css'
 function Navbar() {
+
   return (
     <div>
+      
       <header class="header" id="header">
         <a href="#" class="logo">
           <i class="fas fa-mask"></i>MaskCoder
@@ -12,6 +14,7 @@ function Navbar() {
           <a href="#header">About</a>
           <a href="#services">Events</a>
           <a href="#portfolio">Contacts</a>
+
         </nav>
 
         <div id="menu-btn" class="fa-solid fa-bars fa-2x"></div>
@@ -20,7 +23,7 @@ function Navbar() {
       <section class="hero">
         <div class="hero-content">
           <h1 class="hero-heading">Welcome to Jagriti.</h1>
-          {/* <p>Best websites for developing companies.</p> */}
+          <p>Best websites for developing companies.</p>
         </div>
       </section>
 
