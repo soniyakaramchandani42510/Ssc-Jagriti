@@ -1,18 +1,41 @@
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import About from "./components/About";
+import Home from "./components/Home";
+import Workshops from "./components/Workshops";
 
-import './App.css';
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import Workshops from './components/Workshops'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 
 function App() {
   return (
     <>
-    
+      <Router>
+     
+        <Switch>
+          <Route path="/about">
+          <Navbar />
+            <About />
+            <Footer />
+          </Route>
 
-    
-    <Navbar/>
-  <Footer/>
-    
+          <Route path="/workshops">
+          <Navbar />
+            <Workshops />
+            <Footer />
+          </Route>
+          
+          <Route path="/">
+          <Navbar />
+            <Home />
+            <Footer />
+          </Route>
+         
+        </Switch>
+        
+      </Router>
     </>
   );
 }
