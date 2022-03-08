@@ -36,7 +36,7 @@ function Navbar() {
           <a className="nav-link" href="/events">Events</a>
         </li>
         <li className="nav-item d-flex">
-          <a className="nav-link" href="/workshops">Worshops</a>
+          <a className="nav-link" href="#">Worshops</a>
         </li>
         <li className="nav-item d-flex">
           <a className="nav-link" href="#">Contact</a>
@@ -50,14 +50,14 @@ function Navbar() {
 </nav>
 
 
-      {/* <section className="hero">
+      <section className="hero">
         <div className="hero-content">
           <h1 className="hero-heading">Welcome to Jagriti.</h1>
-          <p>Best websites for developing companies.</p>
+          {/* <p>Best websites for developing companies.</p> */}
         </div>
-      </section> */}
+      </section>
 
-      {/* <section className="services" id="services">
+      <section className="services" id="services">
         <h1>About Us</h1>
         <div className="services-box">
           <div className="box">
@@ -94,7 +94,7 @@ function Navbar() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }
