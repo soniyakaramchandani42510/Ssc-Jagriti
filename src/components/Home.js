@@ -1,102 +1,85 @@
 import React from "react";
-import './Navbar.css'
-function Navbar() {
-
+import "./Navbar.css";
+import "./Home.css";
+import nature from "./nature.jpg"
+function Home() {
   return (
-    <div>
-
-      {/* <header className="header" id="header">
-        <a href="#" className="logo">
-          <i className="fas fa-mask"></i>MaskCoder
-        </a>
-
-
-        <nav className="navbar">
-          <a href="#header">About</a>
-          <a href="#services">Events</a>
-          <a href="#portfolio">Contacts</a>
-
-        </nav>
-
-        <div id="menu-btn" className="fa-solid fa-bars fa-2x"></div>
-      </header> */}
-     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="#">LOGO</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav ms-auto  mb-lg-0  ">
+    <>
+      <div>
+        <section className="hero">
+          <div className="hero-content">
+            <h1 className="hero-heading">Welcome to Jagriti.</h1>
+            {/* <p>Best websites for developing companies.</p> */}
+          </div>
+        </section> 
+        </div>
+        <div className="text-center my-5">
+        <h1 class="text-decoration-underline">TESTIMONIALS</h1>
+        <p className="px-3 my-3 mx-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam unde, iure magnam corporis repellat iste, amet nostrum expedita possimus, veritatis error sed ea? Itaque, quam veritatis facilis ipsam velit tempore.</p>  
         
-        <li className="nav-item ">
-          <a className="nav-link" href="/about">About</a>
-        </li>
-        <li className="nav-item d-flex">
-          <a className="nav-link" href="/events">Events</a>
-        </li>
-        <li className="nav-item d-flex">
-          <a className="nav-link" href="#">Worshops</a>
-        </li>
-        <li className="nav-item d-flex">
-          <a className="nav-link" href="#">Contact</a>
-        </li>
-       
-       
-      </ul>
-     
+            
+      
+      <div id="cover">
+      <div class="testimonial">
+    <div class="card bg-danger">
+      <div class="layer"></div>
+      <div class="content">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <div class="image"><img src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/oscar_boy-128.png"       alt="avatar"/> 
+        </div>
+        <div class="details">
+          <h2>Someone Famous</h2> <br/> <span>Web Designer</span>
+        </div>
+             </div>
+    </div>
+    
+        <div class="card bg-warning">
+      <div class="layer"></div>
+      <div class="content">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <div class="image"><img src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/oscar_boy-128.png"       alt="avatar"/> 
+        </div>
+        <div class="details">
+          <h2>Someone Famous</h2> <br/> <span>Graphic Designer</span>
+        </div>
+             </div>
+    </div>
+    
+        <div class="card bg-primary">
+      <div class="layer"></div>
+      <div class="content">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <div class="image"><img src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/oscar_boy-128.png"       alt="avatar"/> 
+        </div>
+        <div class="details">
+          <h2>Someone Famous</h2> <br/> <span>Product Designer</span>
+        </div>
+             </div>
+    </div>
+    
+  </div>
+  </div>
+  </div>  
+  <div className="text-center my-5">
+  <h1 class="text-decoration-underline">THROWBACK</h1>
+        <p className="px-3 my-3 mx-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam unde, iure magnam corporis repellat iste, amet nostrum expedita possimus, veritatis error sed ea? Itaque, quam veritatis facilis ipsam velit tempore.</p>  
+
+        <div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <img class="nature" src="nature.jpg" />
+    </div>
+    <div class="col-sm">
+    <img class="nature" src="nature.jpg" />
+    </div>
+    <div class="col-sm">
+    <img class="nature" src="nature.jpg" />
     </div>
   </div>
-</nav>
-
-
-      <section className="hero">
-        <div className="hero-content">
-          <h1 className="hero-heading">Welcome to Jagriti.</h1>
-          {/* <p>Best websites for developing companies.</p> */}
-        </div>
-      </section>
-
-      <section className="services" id="services">
-        <h1>About Us</h1>
-        <div className="services-box">
-          <div className="box">
-            <i className="fas fa-code fa-2x"></i>
-            <div className="box-content">
-              <h3>Web Development</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-                libero consequuntur similique ut placeat aut at repellendus in,
-                iure ullam.
-              </p>
-            </div>
-          </div>
-          <div className="box">
-            <i className="fas fa-pencil fa-2x"></i>
-            <div className="box-content">
-              <h3>Web Design</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-                libero consequuntur similique ut placeat aut at repellendus in,
-                iure ullam.
-              </p>
-            </div>
-          </div>
-          <div className="box">
-            <i className="fas fa-shopping-cart fa-2x"></i>
-            <div className="box-content">
-              <h3>E-commerce Web Design</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-                libero consequuntur similique ut placeat aut at repellendus in,
-                iure ullam.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+</div>
+    </div> 
+  </>
   );
 }
 
-export default Navbar;
+export default Home;
