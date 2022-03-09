@@ -8,7 +8,54 @@ body {
   font-size: 112.5%;
   line-height: 1.6em;
 }
+.FAQS{
+  margin-left: 40%;
+}
 
+.box {
+  display:flex; 
+  margin-top:15px;
+align-items:center;
+justify-content:space-evenly;
+  flex-direction: row;
+}
+.btn {
+  position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+  background:transparent;
+  border:2px solid #fff;
+  outline:0;
+	font-size:14px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 2px;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);	
+	transition: all 1s ease;  
+}
+.btn::after{
+  content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;	
+	transition: all 0.75s ease 0s;
+}
+.btn1::after{
+  	background: #D24D57;
+  transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+.btn1:hover:after {
+  background:#7df274;
+}
 /* ================ The Timeline ================ */
 
 .timeline {
@@ -356,7 +403,7 @@ body {
 .footer{
   padding: 13px;
 }
-.heading{
+. ing{
   margin-bottom: -80px !important;
 }
 
@@ -364,4 +411,42 @@ body {
  */
 
 
- 
+ .content {
+  width: 80%;
+  padding: 0;
+  margin: 0 auto;
+}
+summary {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: #fff;
+  color: #333;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 0.25rem;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+details > summary::after {
+  position: absolute;
+  content: "+";
+  right: 20px;
+}
+details[open] > summary::after {
+  position: absolute;
+  content: "-";
+  right: 20px;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0; margin-top: -10px}
+  100%  {opacity: 1; margin-top: 0px}
+}
