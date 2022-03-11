@@ -4,6 +4,29 @@ function Footer() {
   return (
     <div>
         <footer id="contact">
+        <div class="container">    
+  <div class="row">
+    <div class="col-sm-3">
+    <h6>Social Links</h6>
+    <p>ihfiuehfio.in</p>
+          </div>
+    <div class="col-sm-3">
+    <h6>Social Links</h6>
+    <p>ihfiuehfio.in</p>
+      
+    </div>
+    <div class="col-sm-3">
+    <h6>Social Links</h6>
+    <p>ihfiuehfio.in</p>
+      
+    </div>
+    <div class="col-sm-3">
+    <h6>Social Links</h6>
+    <p>ihfiuehfio.in</p>
+    </div>
+  </div>
+</div>
+<div>
   <ul>
     <div id="icon-container">
       <a href="#">
@@ -33,6 +56,7 @@ function Footer() {
       </a>
     </div>
   </ul>
+  </div>
   <p>SOCIAL SERVICE COUNCIL</p>
 </footer>
     </div>

@@ -8,12 +8,31 @@ function Home() {
       <div>
         <section className="hero">
           <div className="hero-content">
+          
             <h1 className="hero-heading">Welcome to Jagriti.</h1>
+          
+            <div class="box">
+  
+<button class="btn btn2">Explore Events</button>
+<button class="btn btn3">Workshops</button>
+  
+  
+</div>
+
             {/* <p>Best websites for developing companies.</p> */}
+
           </div>
-        </section> 
-        </div>
-        <div className="text-center my-5">
+
+        </section>
+       
+    
+        
+     
+        
+      </div>
+
+
+      <div className="text-center my-5">
         <h1 class="text-decoration-underline">TESTIMONIALS</h1>
         <p className="px-3 my-3 mx-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam unde, iure magnam corporis repellat iste, amet nostrum expedita possimus, veritatis error sed ea? Itaque, quam veritatis facilis ipsam velit tempore.</p>  
         
@@ -77,8 +96,33 @@ function Home() {
     </div>
   </div>
 </div>
-    </div> 
-  </>
+
+    </div>
+
+
+    <div class="content">
+        <h1 className="FAQS">FAQS</h1>
+  <details open>
+  <summary>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, quod.</summary>
+  <div class="faq__content">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minima dolorem possimus esse? Sapiente minima laboriosam velit a nisi omnis.</p>
+  </div>
+</details>
+<details>
+  <summary>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, dignissimos?</summary>
+  <div class="faq__content">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error consequatur non ullam blanditiis at sed dolore expedita saepe quod voluptate!</p>
+  </div>
+</details>
+<details>
+  <summary>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, obcaecati!</summary>
+  <div class="faq__content">
+    <p>Answer 3</p>
+  </div>
+</details>
+</div>
+    </>
+
   );
 }
 
