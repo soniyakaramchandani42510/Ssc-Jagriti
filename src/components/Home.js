@@ -1,7 +1,6 @@
 import React from "react";
 import "./Navbar.css";
 import "./Home.css";
-import nature from "./nature.jpg"
 function Home() {
   return (
     <>
@@ -79,26 +78,7 @@ function Home() {
   </div>
   </div>
   </div>  
-  <div className="text-center my-5">
-  <h1 class="text-decoration-underline">THROWBACK</h1>
-        <p className="px-3 my-3 mx-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam unde, iure magnam corporis repellat iste, amet nostrum expedita possimus, veritatis error sed ea? Itaque, quam veritatis facilis ipsam velit tempore.</p>  
-
-        <div class="container">
-  <div class="row">
-    <div class="col-sm">
-      <img class="nature" src="nature.jpg" />
-    </div>
-    <div class="col-sm">
-    <img class="nature" src="nature.jpg" />
-    </div>
-    <div class="col-sm">
-    <img class="nature" src="nature.jpg" />
-    </div>
-  </div>
-</div>
-
-    </div>
-
+ 
 
     <div class="content">
         <h1 className="FAQS">FAQS</h1>

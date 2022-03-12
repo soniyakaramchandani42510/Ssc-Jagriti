@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+.clock{
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  height: 200px;
+  width: 550px;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+.clock section p{
+  font-size: 4rem;
+}
+.clock section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
