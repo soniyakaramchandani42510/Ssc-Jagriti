@@ -3,7 +3,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Home from "./components/Home";
+import Timer from "./components/Timer";
 import Workshops from "./components/Workshops";
+
 
 // import Workshops from './components/Workshops'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -30,6 +32,8 @@ function App() {
           <Route path="/">
           <Navbar />
             <Home />
+            {/* <Timer/> */}
+           
             <Footer />
           </Route>
          
