@@ -24,7 +24,8 @@ function Home() {
   
 </div>
 
-           
+            {/* <p>Best websites for developing companies.</p> */}
+
           </div>
 
         </section>
@@ -83,32 +84,13 @@ function Home() {
   </div>
   </div>
   </div>  
-  <div className="text-center my-5">
-  <h1 class="text-decoration-underline">THROWBACK</h1>
-        <p className="px-3 my-3 mx-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam unde, iure magnam corporis repellat iste, amet nostrum expedita possimus, veritatis error sed ea? Itaque, quam veritatis facilis ipsam velit tempore.</p>  
+ 
 
-        <div class="container">
-  <div class="row">
-    <div class="col-sm">
     
-      <img class="nature" src={require('../Assets/homeimg.png')} />
-    </div>
-    <div class="col-sm">
-    <img class="nature" src={require('../Assets/homeimg.png')} />
-    
-    </div>
-    <div class="col-sm">
-    <img class="nature" src={require('../Assets/homeimg.png')} />
-    
-    </div>
-  </div>
-</div>
-
-    </div>
 
 
-    <div class="content">
-        <h1 className=" text-decoration-underline text-center my-5">Frequently Asked   Questions</h1>
+<div class="content">
+        <h1 className="text-decoration-underline text-center my-5">Frequently Asked Questions</h1>
   <details >
   <summary>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, quod.</summary>
   <div class="faq__content">
@@ -128,8 +110,6 @@ function Home() {
   </div>
 </details>
 </div>
-
-
 
 
 
