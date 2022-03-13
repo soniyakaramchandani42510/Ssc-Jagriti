@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Workshops from "./components/Workshops";
 import React, { useEffect, useState } from "react";
 import Clock from "./components/Clock";
+import Events from "./components/Events";
 
 // import Workshops from './components/Workshops'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -68,6 +69,12 @@ function App() {
           <Route path="/about">
           <Navbar />
             <About />
+            <Footer />
+          </Route>
+
+          <Route path="/events">
+          <Navbar />
+            <Events />
             <Footer />
           </Route>
 

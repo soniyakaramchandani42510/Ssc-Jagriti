@@ -6,3 +6,35 @@
     justify-content: center;
 
 }
+.date{
+    margin-left: 20%;
+}
+
+.text{
+    font-weight: 900;
+}
+.jagriti{
+    font-size: larger;
+}
+#days{
+    background-color: rgb(247, 211, 217);
+    height: 19%;
+    width: 9%;
+    margin-bottom: 20%;
+    margin-left: 12%;
+}
+#hours{
+    background-color: rgb(247, 211, 217);
+    height: 19%;
+    width: 9%;
+}
+#minutes{
+    background-color: rgb(247, 211, 217);
+    height: 19%;
+    width: 9%;
+}
+#seconds{
+    background-color: rgb(247, 211, 217);
+    height: 19%;
+    width: 9%;
+}

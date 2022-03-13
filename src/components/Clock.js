@@ -3,28 +3,30 @@ import "./Clock.css";
 
 const Clock = ({timerDays,timerHours,timerMinutes,timerSeconds}) => {
   return <Fragment>
-      <div className='text-center my-5'>
-          <h1 className='text-decoration-underline'>COUNTDOWN</h1>
+      <div className='my-5 date'>
+          <h3 className='text'>MARK THE DATE</h3>
+          <br />
+          <p className='jagriti'>Jagriti will go live on 16 April 2022.</p>
       </div>
       <section className="timer-container">
           <section className="timer">
               <div className="clock">
-                  <section>
+                  <section id='days'>
                       <p>{timerDays}</p>
                       <small>Days</small>
                   </section>
-                  <span>:</span>
-                  <section>
+                  
+                  <section id='hours'>
                       <p>{timerHours}</p>
                       <small>Hours</small>
                   </section>
-                  <span>:</span>
-                  <section>
+                  
+                  <section id='minutes'>
                       <p>{timerMinutes}</p>
                       <small>Minutes</small>
                   </section>
-                  <span>:</span>
-                  <section>
+                  
+                  <section id='seconds'>
                       <p>{timerSeconds}</p>
                       <small>Seconds</small>
                   </section>
