@@ -1,8 +1,43 @@
 .timer-container{
-    text-align: center;
+    /* text-align: center; */
     height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
+}
+.date{
+    margin-left: 20%;
+}
+
+.text{
+    font-weight: 900;
+}
+.jagriti{
+    font-size: larger;
+}
+#days{
+    background-color: #F2E0D2;
+    height: 19%;
+    width: 9%;
+    margin-bottom: 20%;
+    margin-left: 12%;
+    margin-right: 20px
+}
+#hours{
+    background-color: #F2E0D2;
+    height: 19%;
+    width: 9%;
+    margin-right: 20px
+}
+#minutes{
+    background-color: #F2E0D2;
+    height: 19%;
+    width: 9%;
+    margin-right: 20px
+}
+#seconds{
+    background-color: #F2E0D2;
+    height: 19%;
+    width: 9%;
 }

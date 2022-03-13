@@ -7,11 +7,13 @@ import Home from "./components/Home";
 import Workshops from "./components/Workshops";
 import React, { useEffect, useState } from "react";
 import Clock from "./components/Clock";
+import Events from "./components/Events";
 
 
 // import Workshops from './components/Workshops'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Throwback from "./components/Throwback";
+import GuestTalk from "./components/GuestTalk";
 
 
 function App() {
@@ -73,16 +75,22 @@ function App() {
             <Footer />
           </Route>
 
-          <Route path="/workshops">
+          <Route path="/events">
           <Navbar />
-            <Workshops />
+            <Events />
+            <Footer />
+          </Route>
+
+          <Route path="/Guesttalk">
+          <Navbar />
+            <GuestTalk />
             <Footer />
           </Route>
           
           <Route path="/">
           <Navbar />
             <Home />
-            {/* <Clock timerDays={timerDays} timerHours={timerHours} timerMinutes={timerMinutes} timerSeconds={timerSeconds} /> */}
+            <Clock timerDays={timerDays} timerHours={timerHours} timerMinutes={timerMinutes} timerSeconds={timerSeconds} />
             <Throwback />
             <Footer />
           </Route>
