@@ -18,23 +18,23 @@
 }
 #days{
     background-color: rgb(247, 211, 217);
-    height: 19%;
-    width: 9%;
+    height: 17vh;
+    width: 7vw;
     margin-bottom: 20%;
     margin-left: 12%;
 }
 #hours{
     background-color: rgb(247, 211, 217);
-    height: 19%;
-    width: 9%;
+    height: 17vh;
+    width: 7vw;
 }
 #minutes{
     background-color: rgb(247, 211, 217);
-    height: 19%;
-    width: 9%;
+    height: 17vh;
+    width: 7vw;
 }
 #seconds{
     background-color: rgb(247, 211, 217);
-    height: 19%;
-    width: 9%;
+    height: 17vh;
+    width: 7vw;
 }
