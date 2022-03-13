@@ -32,7 +32,7 @@ h1 {
     text-align: center;
 }
 
-photo {
+.photo {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
