@@ -8,12 +8,14 @@ import Workshops from "./components/Workshops";
 import React, { useEffect, useState } from "react";
 import Clock from "./components/Clock";
 import Events from "./components/Events";
+import Testimonial from "./components/Testimonial";
 
 
 // import Workshops from './components/Workshops'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Throwback from "./components/Throwback";
 import GuestTalk from "./components/GuestTalk";
+import Faqs from "./components/Faqs";
 
 
 function App() {
@@ -91,7 +93,9 @@ function App() {
           <Navbar />
             <Home />
             <Clock timerDays={timerDays} timerHours={timerHours} timerMinutes={timerMinutes} timerSeconds={timerSeconds} />
+            <Testimonial/>
             <Throwback />
+            <Faqs/>
             <Footer />
           </Route>
          

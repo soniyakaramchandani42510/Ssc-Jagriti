@@ -32,7 +32,7 @@ const Clock = ({timerDays,timerHours,timerMinutes,timerSeconds}) => {
                   </section>
                   </div>
                   </section>
-                  <img id="imgs" src={require('../Assets/timer.png')} alt="" />
+                  <img id="imgs" src={require('../Assets/timer.png')}  alt="..."/>
           </section>
   </Fragment>
 };
