@@ -26,9 +26,9 @@ function Navbar() {
               <li className="nav-item d-flex">
                 <a className="nav-link" href="/Workshops">Worshops</a>
               </li>
-              <li className="nav-item d-flex">
+              {/* <li className="nav-item d-flex">
                 <a className="nav-link" href="/Contact">Contact</a>
-              </li>
+              </li> */}
 
 
             </ul>
