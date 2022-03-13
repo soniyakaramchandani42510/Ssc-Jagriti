@@ -1,5 +1,4 @@
-
- body {	
+body {	
   margin: 0;
   padding: 0;
   background: rgb(230,230,230);
@@ -413,7 +412,7 @@ justify-content:space-evenly;
   padding: 13px;
 }
 
-. ing{
+.ing{
   margin-bottom: -80px !important;
 }
 .homeimg{
@@ -428,7 +427,7 @@ justify-content:space-evenly;
     margin-top: 2px;
  }
 }
-. ing{
+.ing{
   margin-bottom: -80px !important;
 }
 
@@ -544,4 +543,13 @@ details[open] summary ~ * {
 .nature{
   width: 25%;
   height: 100%;
+}
+#card1{
+  background-color: #325684;
+}
+#card2{
+  background-color: #B52E1F;
+}
+#card3{
+  background-color: #DD6A2B;
 }

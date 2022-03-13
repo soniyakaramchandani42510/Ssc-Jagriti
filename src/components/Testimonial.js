@@ -10,7 +10,7 @@ function Testimonial() {
   
   <div id="cover">
   <div class="testimonial">
-<div class="card bg-danger">
+<div class="card" id='card1'>
   <div class="layer"></div>
   <div class="content">
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
@@ -22,7 +22,7 @@ function Testimonial() {
          </div>
 </div>
 
-    <div class="card bg-warning">
+    <div class="card" id='card2'>
   <div class="layer"></div>
   <div class="content">
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
@@ -34,7 +34,7 @@ function Testimonial() {
          </div>
 </div>
 
-    <div class="card bg-primary">
+    <div class="card" id='card3'>
   <div class="layer"></div>
   <div class="content">
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
