@@ -3,14 +3,17 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Home from "./components/Home";
+
 import Workshops from "./components/Workshops";
 import React, { useEffect, useState } from "react";
 import Clock from "./components/Clock";
 import Events from "./components/Events";
 
+
 // import Workshops from './components/Workshops'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Throwback from "./components/Throwback";
+import GuestTalk from "./components/GuestTalk";
 
 
 function App() {
@@ -78,9 +81,9 @@ function App() {
             <Footer />
           </Route>
 
-          <Route path="/workshops">
+          <Route path="/Guesttalk">
           <Navbar />
-            <Workshops />
+            <GuestTalk />
             <Footer />
           </Route>
           

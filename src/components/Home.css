@@ -1,4 +1,4 @@
- body {	
+body {	
   margin: 0;
   padding: 0;
   background: rgb(230,230,230);
@@ -19,7 +19,7 @@ align-items:center;
 justify-content:space-evenly;
   flex-direction: row;
 }
-.btn {
+.btn1 {
   position: relative;
 	display: block;
 	margin: 30px auto 0;
@@ -39,7 +39,11 @@ justify-content:space-evenly;
 	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);	
 	transition: all 1s ease;  
 }
-.btn::after{
+.button{
+  background: white;
+    color: #D95C29;
+}
+.btn1::after{
   content: "";
 	position: absolute;
 	height: 0%;
@@ -48,6 +52,10 @@ justify-content:space-evenly;
 	width: 150%;
 	z-index: -1;	
 	transition: all 0.75s ease 0s;
+}
+.btn1:hover{
+  transition: all 0.75s ease 0s;
+ color: #00042a;
 }
 .btn1::after{
   	background: #D24D57;
@@ -385,7 +393,7 @@ justify-content:space-evenly;
   border: 1px solid rgb(80, 79, 79);
 }
 
-.btn-more{
+.btn1-more{
   background-image: linear-gradient(to right, #00042a, #00124d, #001772, #001997, #0012bc);    border: none;
   width: 110px;
   border-radius: 150px;
@@ -395,13 +403,29 @@ justify-content:space-evenly;
   font-size: 16px;
 }
 
-.btn-more:hover{
+.btn1-more:hover{
   background-image: linear-gradient(to right, #0c22e6, #0736d3, #061d79, #07165e, #07116d);    
   border: none;
 }
 
 .footer{
   padding: 13px;
+}
+
+. ing{
+  margin-bottom: -80px !important;
+}
+.homeimg{
+  margin-top: -104px;
+
+  
+  
+}
+@media (max-width: 900px) {
+ .homeimg{
+    width: 100vw;
+    margin-top: 2px;
+ }
 }
 . ing{
   margin-bottom: -80px !important;

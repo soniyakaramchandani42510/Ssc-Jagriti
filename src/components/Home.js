@@ -1,19 +1,25 @@
 import React from "react";
 import "./Navbar.css";
 import "./Home.css";
+
+
 function Home() {
   return (
     <>
       <div>
         <section className="hero">
           <div className="hero-content">
+          <img className="homeimg" src={require('../Assets/homeimg.png')} />
+            {/* <h1 className="hero-heading">Welcome to Jagriti.</h1> */}
+            <p className="paras">Lorem ipsum dolor Lorem ipsum dolor sit amet. sit amet consectetur adipisicing elit. Odit, id</p>
+            <p className="paras">Lorem ipsum dolor sit amet.</p>
+            
           
-            <h1 className="hero-heading">Welcome to Jagriti.</h1>
           
             <div class="box">
   
-<button class="btn btn2">Explore Events</button>
-<button class="btn btn3">Workshops</button>
+<button class="btn1 btn2 button">Explore Events</button>
+<button class="btn1 btn3 button">Workshops</button>
   
   
 </div>
@@ -33,7 +39,7 @@ function Home() {
 
       <div className="text-center my-5">
         <h1 class="text-decoration-underline">TESTIMONIALS</h1>
-        <p className="px-3 my-3 mx-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam unde, iure magnam corporis repellat iste, amet nostrum expedita possimus, veritatis error sed ea? Itaque, quam veritatis facilis ipsam velit tempore.</p>  
+        <p className="px-3 my-3 mx-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam unde, iure magnam corporis repellat iste, amet nostrum expedita possimus, veritatis error sed ea? Itaque, quam veritatis facilis ipsam velit tempore.</p>  
         
             
       
@@ -80,9 +86,12 @@ function Home() {
   </div>  
  
 
-    <div class="content">
-        <h1 className="FAQS">FAQS</h1>
-  <details open>
+    
+
+
+<div class="content">
+        <h1 className="text-decoration-underline text-center my-5">Frequently Asked Questions</h1>
+  <details >
   <summary>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, quod.</summary>
   <div class="faq__content">
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minima dolorem possimus esse? Sapiente minima laboriosam velit a nisi omnis.</p>
@@ -101,6 +110,10 @@ function Home() {
   </div>
 </details>
 </div>
+
+
+
+
     </>
 
   );

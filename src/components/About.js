@@ -1,10 +1,24 @@
 import React from 'react'
-
+import './about.css'
 function About() {
   return (
-    <div>
-        <h1>about</h1>
-    </div>
+<>
+<h1>hello</h1>
+
+
+	<div class="image-area">
+		<div class="img-wrapper">
+			<img src="https://images.pexels.com/photos/1220757/pexels-photo-1220757.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Atul Prajapati"/>
+			<h2>David james</h2>
+			<ul>
+				<li><a href="https://github.com/atuljustano"><i class="fab fa-github"></i></a></li>
+				<li><a href="https://www.instagram.com/atulkprajapati2000/"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="https://twitter.com/atuljustano"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UCf-KfxuY8PZBSD_8RW2nYsw"><i class="fab fa-youtube"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</>
   )
 }
 
