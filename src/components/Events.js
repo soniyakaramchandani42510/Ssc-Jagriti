@@ -18,6 +18,16 @@ function Events() {
              alias unde non expedita molestiae excepturi.
              </p>
         </div>
+        <div>
+          <div>
+            <img id="images" src={require('../Assets/events.png')} alt="" />
+          </div>
+          <div className='over'>
+            <h6 className='overview'>Overview</h6>
+            <h6 className='lines'>Timeline</h6>
+            <h6 className='contacts'>Contacts</h6>
+          </div>
+        </div>
 
 
 
