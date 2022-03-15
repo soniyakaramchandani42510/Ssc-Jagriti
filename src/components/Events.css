@@ -1,0 +1,64 @@
+.competitions {
+    margin-left: 20%;
+    margin-top: 20%;
+    font-weight: bolder;
+}
+.guest{
+    margin-left: 20%;
+    font-weight: bolder;
+    
+}
+.events{
+    margin-top: 12%;
+}
+.para {
+    margin-left: 22%;
+    margin-right: 38%;
+    margin-top: 5%;
+}
+#images{
+    margin-top: 5%;
+    margin-left: 35%;
+}
+.tags{
+    margin-top: 5%;
+}
+/* .over{
+    display: inline-block;
+} */
+/* .overview{
+
+    margin-left: 38%;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.lines{
+    margin-left: 47%;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.contacts{
+    margin-left: 56%;
+    font-weight: bolder;
+    cursor: pointer;
+} */
+#overview{
+    margin-left: -25%;
+    cursor: pointer;
+    font-weight: bolder;
+}
+#timeline{
+    margin-left: -32%;
+    cursor: pointer;
+    font-weight: bolder;
+}
+#contacts{
+    margin-left: -32%;
+    cursor: pointer;
+    font-weight: bolder;
+}
+#special{
+    margin-right: 40%;
+    margin-left: -25%;
+    margin-top: 5%;
+}

@@ -23,6 +23,7 @@ function App() {
   const [timerHours, setTimerHours] = useState();
   const [timerMinutes, setTimerMinutes] = useState();
   const [timerSeconds, setTimerSeconds] = useState();
+  const [events,setEvents] = useState();
 
   let interval;
 
@@ -38,7 +39,7 @@ function App() {
 
       const hours = Math.floor(
         (distance % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60));
-        
+
       const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60));
       const seconds = Math.floor((distance % (60 * 1000)) / 1000);
 
@@ -54,7 +55,7 @@ function App() {
          setTimerMinutes(minutes);
          setTimerSeconds(seconds);
       }
-      
+
     });
   };
 
@@ -62,6 +63,17 @@ function App() {
     startTimer();
   })
 
+  function overView(){
+    console.log("timeline");
+    
+
+  }
+  function timeLine(){
+    console.log("timeline");
+  }
+  function contacts(){
+    console.log("contacts");
+  }
 
 
 
@@ -69,7 +81,7 @@ function App() {
   return (
     <>
       <Router>
-     
+
         <Switch>
           <Route path="/about">
           <Navbar />
@@ -79,16 +91,16 @@ function App() {
 
           <Route path="/events">
           <Navbar />
-            <Events />
+            <Events events={events} setEvents={setEvents} overView={overView} timeLine={timeLine} contacts={contacts} />
             <Footer />
           </Route>
 
-          <Route path="/Guesttalk">
+          <Route path="/guesttalk">
           <Navbar />
             <GuestTalk />
             <Footer />
           </Route>
-          
+
           <Route path="/">
           <Navbar />
             <Home />
@@ -98,9 +110,9 @@ function App() {
             <Faqs/>
             <Footer />
           </Route>
-         
+
         </Switch>
-        
+
       </Router>
     </>
   );
