@@ -39,7 +39,7 @@ function App() {
 
       const hours = Math.floor(
         (distance % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60));
-        
+
       const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60));
       const seconds = Math.floor((distance % (60 * 1000)) / 1000);
 
@@ -55,7 +55,7 @@ function App() {
          setTimerMinutes(minutes);
          setTimerSeconds(seconds);
       }
-      
+
     });
   };
 
@@ -64,7 +64,9 @@ function App() {
   })
 
   function overView(){
-        
+    console.log("timeline");
+    
+
   }
   function timeLine(){
     console.log("timeline");
@@ -79,7 +81,7 @@ function App() {
   return (
     <>
       <Router>
-     
+
         <Switch>
           <Route path="/about">
           <Navbar />
@@ -89,7 +91,7 @@ function App() {
 
           <Route path="/events">
           <Navbar />
-            <Events events={events} overView={overView} timeLine={timeLine} contacts={contacts} />
+            <Events events={events} setEvents={setEvents} overView={overView} timeLine={timeLine} contacts={contacts} />
             <Footer />
           </Route>
 
@@ -98,7 +100,7 @@ function App() {
             <GuestTalk />
             <Footer />
           </Route>
-          
+
           <Route path="/">
           <Navbar />
             <Home />
@@ -108,9 +110,9 @@ function App() {
             <Faqs/>
             <Footer />
           </Route>
-         
+
         </Switch>
-        
+
       </Router>
     </>
   );
