@@ -18,20 +18,47 @@
 }
 #images{
     margin-top: 5%;
-    margin-left: 15%;
+    margin-left: 35%;
+}
+.tags{
+    margin-top: 5%;
 }
 /* .over{
     display: inline-block;
 } */
-.overview{
+/* .overview{
+
     margin-left: 38%;
     font-weight: bolder;
+    cursor: pointer;
 }
 .lines{
     margin-left: 47%;
     font-weight: bolder;
+    cursor: pointer;
 }
 .contacts{
     margin-left: 56%;
     font-weight: bolder;
+    cursor: pointer;
+} */
+#overview{
+    margin-left: -25%;
+    cursor: pointer;
+    font-weight: bolder;
+}
+#timeline{
+    margin-left: -32%;
+    cursor: pointer;
+    font-weight: bolder;
+}
+#contacts{
+    margin-left: -32%;
+    cursor: pointer;
+    font-weight: bolder;
+}
+#special{
+    margin-right: 40%;
+    margin-left: -25%;
+    margin-top: 5%;
 }

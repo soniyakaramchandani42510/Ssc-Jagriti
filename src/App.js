@@ -23,6 +23,7 @@ function App() {
   const [timerHours, setTimerHours] = useState();
   const [timerMinutes, setTimerMinutes] = useState();
   const [timerSeconds, setTimerSeconds] = useState();
+  const [events,setEvents] = useState();
 
   let interval;
 
@@ -62,6 +63,16 @@ function App() {
     startTimer();
   })
 
+  function overView(){
+    
+    
+  }
+  function timeLine(){
+    console.log("timeline");
+  }
+  function contacts(){
+    console.log("contacts");
+  }
 
 
 
@@ -79,11 +90,11 @@ function App() {
 
           <Route path="/events">
           <Navbar />
-            <Events />
+            <Events events={events} overView={overView} timeLine={timeLine} contacts={contacts} />
             <Footer />
           </Route>
 
-          <Route path="/Guesttalk">
+          <Route path="/guesttalk">
           <Navbar />
             <GuestTalk />
             <Footer />
