@@ -3,7 +3,7 @@ import './Events.css'
 
 function Events(props) {
   function overView(){
-    props.setEvents=`dheiufheijf`;
+    props.setEvents = `dheiufheijf`;
 
   }
 
