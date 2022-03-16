@@ -51,9 +51,10 @@ function Events(props) {
             </div>
             <div className="row">
               <div className="col-sm">
-                <span>View Problem Statement</span>
+                <h6 id='problem'>View Problem Statement</h6>
               </div>
               <div className="col-sm">
+                <h6 id='register'>Register for the event</h6>
 
               </div>
             </div>

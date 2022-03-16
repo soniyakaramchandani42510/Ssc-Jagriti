@@ -63,3 +63,14 @@
     margin-left: -25%;
     margin-top: 5%;
 }
+#problem{
+    margin-top: 15%;
+    margin-left: -45%;
+    font-weight: bolder;
+    color: orange;
+}
+#register{
+    margin-top: 15%;
+    margin-left: -70%;
+    font-weight: bolder;
+}
