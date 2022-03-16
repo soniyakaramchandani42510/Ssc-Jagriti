@@ -18,7 +18,8 @@ function Home() {
           
             <div class="box">
   
-<button class="btn1 btn2 button">Explore Events</button>
+<button class="btn1 btn2 button"><a href="/events">Explore Events</a>
+</button>
 <button class="btn1 btn3 button">Workshops</button>
   
   
