@@ -44,7 +44,7 @@ function GuestTalk() {
   </ul>
 </div>
 
-<h3 class="made_by">Made with ♡</h3>
+
     </>
   )
 }

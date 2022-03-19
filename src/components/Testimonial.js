@@ -2,53 +2,49 @@ import React from 'react'
 import './Home.js'
 function Testimonial() {
   return (
-    <div className="text-center my-5">
-    <h1 class="text-decoration-underline">TESTIMONIALS</h1>
+    <>
+   
+    <div class="main">
+  <h1>Testimonials</h1>
+  <ul class="cards">
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img className="photo" src="https://picsum.photos/500/300/?image=10"/></div>
+        <div class="card_content card-color1">
+          <h2 class="card_title">Card Grid Layout</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Register Now</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img className="photo" src="https://picsum.photos/500/300/?image=5"/></div>
+        <div class="card_content card-color2">
+          <h2 class="card_title">Card Grid Layout</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Register Now</button>
+        </div>
+      </div>
+    </li>
     
+   
     
-        
-  
-  <div id="cover">
-  <div class="testimonial">
-<div class="card" id='card1'>
-  <div class="layer"></div>
-  <div class="content">
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-    <div class="image"><img src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/oscar_boy-128.png"       alt="avatar"/> 
-    </div>
-    <div class="details">
-      <h2>Someone Famous</h2> <br/> <span>Web Designer</span>
-    </div>
-         </div>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img className="photo" src="https://picsum.photos/500/300/?image=2"/></div>
+        <div class="card_content card-color3">
+          <h2 class="card_title">Card Grid Layout</h2>
+          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+          <button class="btn card_btn">Register Now</button>
+        </div>
+      </div>
+    </li>
+  </ul>
 </div>
 
-    <div class="card" id='card2'>
-  <div class="layer"></div>
-  <div class="content">
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-    <div class="image"><img src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/oscar_boy-128.png"       alt="avatar"/> 
-    </div>
-    <div class="details">
-      <h2>Someone Famous</h2> <br/> <span>Graphic Designer</span>
-    </div>
-         </div>
-</div>
 
-    <div class="card" id='card3'>
-  <div class="layer"></div>
-  <div class="content">
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-    <div class="image"><img src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/oscar_boy-128.png"       alt="avatar"/> 
-    </div>
-    <div class="details">
-      <h2>Someone Famous</h2> <br/> <span>Product Designer</span>
-    </div>
-         </div>
-</div>
-
-</div>
-</div>
-</div>  
+    </>
   )
 }
 
