@@ -6,7 +6,7 @@ function GuestTalk() {
       <>
    
     <div class="main">
-  <h1>GuestTalk</h1>
+  <h1 className='hello'>GuestTalk</h1>
   <ul class="cards">
     <li class="cards_item">
       <div class="card">

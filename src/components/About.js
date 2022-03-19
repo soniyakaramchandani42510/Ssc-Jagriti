@@ -3,21 +3,22 @@ import './about.css'
 function About() {
   return (
 <>
-<h1>hello</h1>
+<div className='container-fluid react'>
+	<h1 className='text-center font-weight-bolder hey'>What is Jagriti?</h1>
+	<p class="lead text-center">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae reprehenderit nam rerum quas saepe. Consequatur quaerat fuga aliquam, quidem sapiente, nostrum assumenda consectetur sint, aliquid tenetur facere quis dignissimos dolorem!
+</p>
+</div>
+<div className='container-fluid react'>
+	<h1 className='text-center font-weight-bolder hey'>Social Service Council</h1>
+	<p class="lead text-center">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae reprehenderit nam rerum quas saepe. Consequatur quaerat fuga aliquam, quidem sapiente, nostrum assumenda consectetur sint, aliquid tenetur facere quis dignissimos dolorem!
+</p>
+</div>
 
 
-	<div class="image-area">
-		<div class="img-wrapper">
-			<img src="https://images.pexels.com/photos/1220757/pexels-photo-1220757.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Atul Prajapati"/>
-			<h2>David james</h2>
-			<ul>
-				<li><a href="https://github.com/atuljustano"><i class="fab fa-github"></i></a></li>
-				<li><a href="https://www.instagram.com/atulkprajapati2000/"><i class="fab fa-instagram"></i></a></li>
-				<li><a href="https://twitter.com/atuljustano"><i class="fab fa-twitter"></i></a></li>
-				<li><a href="https://www.youtube.com/channel/UCf-KfxuY8PZBSD_8RW2nYsw"><i class="fab fa-youtube"></i></a></li>
-			</ul>
-		</div>
-	</div>
+
+
 </>
   )
 }
