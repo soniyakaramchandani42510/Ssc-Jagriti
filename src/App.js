@@ -1,21 +1,17 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import About from "./components/About";
-import Home from "./components/Home";
-
-import Workshops from "./components/Workshops";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import About from "./components/About/About";
+import Home from "./components/Home/Home";
+import Workshops from "./components/Workshops/Workshops";
 import React, { useEffect, useState } from "react";
-import Clock from "./components/Clock";
-import Events from "./components/Events";
-import Testimonial from "./components/Testimonial";
-
-
-// import Workshops from './components/Workshops'
+import Clock from "./components/Clock/Clock";
+import Events from "./components/Events/Events";
+import Testimonial from "./components/Testimonial/Testimonial";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Throwback from "./components/Throwback";
-import GuestTalk from "./components/GuestTalk";
-import Faqs from "./components/Faqs";
+import Throwback from "./components/Throwback/Throwback";
+import GuestTalk from "./components/GuestTalk/GuestTalk";
+import Faqs from "./components/Faqs/Faqs";
 
 
 function App() {
@@ -44,12 +40,9 @@ function App() {
       const seconds = Math.floor((distance % (60 * 1000)) / 1000);
 
       if(distance < 0){
-        // stop timer
-
         clearInterval(interval.current);
       }
       else{
-         // update timer
          setTimerDays(days);
          setTimerHours(hours);
          setTimerMinutes(minutes);

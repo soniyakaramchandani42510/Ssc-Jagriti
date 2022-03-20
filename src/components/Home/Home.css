@@ -333,7 +333,7 @@ justify-content:space-evenly;
 
 }
 
-@media screen and (min-width: 400px ?? max-width: 660px) {
+@media screen and (min-width: 400px) and (max-width: 660px) {
 
 .direction-l .desc,
 .direction-r .desc {
@@ -418,10 +418,22 @@ justify-content:space-evenly;
 }
 .homeimg{
   margin-top: -104px;
-
-  
-  
+  position: relative;
 }
+
+.homeimg::after {
+  content: 'Jagriti';
+  color: black;
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 200px;
+  height: 200px;
+  background: black;
+}
+
 @media (max-width: 900px) {
  .homeimg{
     width: 100vw;

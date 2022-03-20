@@ -90,6 +90,7 @@ header #menu-btn:hover {
 
 .navbar-light{
   background: #F2E0D2 !important;
+  z-index: 1000;
 }
 .hero .hero-content {
   text-align: center;
