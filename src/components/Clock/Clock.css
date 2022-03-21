@@ -1,0 +1,99 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.clockOuter {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clockOuter h3 {
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 113%;
+}
+
+.clockLeft {
+  padding-left: 5%;
+}
+
+.timerContainer {
+  display: flex;
+}
+
+.timerBox {
+  background: #f2e0d2;
+  border-radius: 4px;
+  padding: 20px;
+  width: 120px;
+  margin-right: 20px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timerBox p {
+  font-weight: 700;
+  font-size: 48.5845px;
+  text-align: center;
+  color: #dd6a2b;
+  margin: 20px 0 10px 0;
+}
+
+.timerBox small {
+    margin: 0 auto;
+}
+
+.clockRight img {
+    width: 400px;
+}
+
+@media screen and (max-width: 1025px) {
+    .clockOuter {
+        min-height: 80vh;
+    }
+
+    .clockRight {
+        display: none;
+    }
+    .clockLeft {
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .timerContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    .timerBox {
+        margin-right: 0;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .clockOuter {
+        min-height: 80vh;
+    }
+
+    .seconds {
+        display: none;
+    }
+
+    .timerBox {
+        padding: 10px;
+        width: 80px;
+    }
+
+    .timerBox p {
+        font-size: 38px;
+    }
+}
