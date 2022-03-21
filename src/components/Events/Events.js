@@ -30,37 +30,46 @@ function Events(props) {
           molestiae excepturi.
         </p>
       </div>
-      <div>
-        <div className="row">
-          <div className="col-sm">
-            <img id="images" src={eventImage} alt="" />
-          </div>
-          <div className="col-sm tags">
-            <div className="row">
-              <div className="col-sm" id="overview" onClick={overView}>
-                Overview
-              </div>
-              <div className="col-sm" id="timeline" onClick={timeLine}>
-                Timeline
-              </div>
-              <div className="col-sm" id="contacts" onClick={contacts}>
-                Contacts
-              </div>
+      <div className="card event-card">
+            <div className="card-horizontal">
+                <div className="img-square-wrapper">
+                    <img id="images" src={require('../../Assets/events.png')} alt=""  />
+                </div>
+                <div className="card-body event-body">
+                    <div className="row event-title card-title">
+                      <div className="col-sm" id='overview' onClick={overView}>
+                      Overview
+                      </div>
+                      <div className="col-sm" id='timeline' onClick={timeLine}>
+                      Timeline
+                      </div>
+                      <div className="col-sm" id='contacts' onClick={contacts}>
+                      Contacts
+                      </div>
+                    </div>
+                    <div className="dropdown e-dropdown">
+                      <div className=" card-title dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Overview
+                      </div>
+                      <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button className="dropdown-item" type="button" onClick={overView}>Overview</button>
+                        <button className="dropdown-item" type="button" onClick={timeLine}>Timeline</button>
+                        <button className="dropdown-item" type="button" onClick={contacts}>Contacts</button>
+                      </div>
+                    </div>
+
+                    <div className="card-text event-text">{props.events}</div>
+                      <div className="row buttons">
+                        <div className="col-sm">
+                          <a id="problem" href="#" className="btn">View Problem Statement</a>
+                        </div>
+                        <div  className="col-sm">
+                          <a id="register" href="#" className="btn btn-danger">Register</a>
+                        </div>
+                      </div>
+                </div>
             </div>
-            <div className="row" id="special">
-              {props.events}
-            </div>
-            <div className="row">
-              <div className="col-sm">
-                <h6 id="problem">View Problem Statement </h6>
-              </div>
-              <div className="col-sm">
-                <h6 id="register">Register for the event &#x0003E;</h6>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
 
       {/* template */}
     </>

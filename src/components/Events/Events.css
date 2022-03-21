@@ -7,73 +7,98 @@
     margin-left: 20%;
     font-weight: bolder;
     cursor: pointer;
-    text-decoration: none;    
-}
-.events{
-    margin-top: 12%;
+    text-decoration: none;
 }
 .para {
     margin-left: 33%;
     margin-right: 35%;
     margin-top: 5%;
 }
-#images{
-    margin-top: 5%;
-    margin-left: 35%;
+.event-card {
+  width:auto;
+  height: auto;
 }
-.tags{
-    margin-top: 5%;
+.card-horizontal {
+  display: flex!important;
+  flex: 1 1 auto !important;
+  justify-content: center;
+  align-content: center;
 }
- .over{
-    display: inline-block; 
-} 
- .overview{
-
-    margin-left: 38%;
-    font-weight: bolder;
-    cursor: pointer;
+.event-body .event-text{
+  margin-top: 2em;
+  justify-content: center;
+  align-content: center;
 }
-.lines{
-    margin-left: 47%;
-    font-weight: bolder;
-    cursor: pointer;
-}
-.contacts{
-    margin-left: 56%;
-    font-weight: bolder;
-    cursor: pointer;
-} 
- #overview{
-    margin-left: -25%;
+#overview{
     cursor: pointer;
     font-weight: bolder;
 }
 #timeline{
-    margin-left: -32%;
     cursor: pointer;
     font-weight: bolder;
 }
 #contacts{
-    margin-left: -32%;
     cursor: pointer;
     font-weight: bolder;
 }
-#special{
-    margin-right: 40%;
-    margin-left: -25%;
-    margin-top: 5%;
+.event-card
+#images
+{
+  width: 300px;
+  height: 300px;
 }
 #problem{
-    margin-top: 15%;
-    margin-left: -45%;
     font-weight: bolder;
     color: orange;
 }
 #register{
-
-    margin-top: 15%;
-    margin-left: -70%;
+    color: red;
     font-weight: bolder;
-} 
+}
+.buttons{
+  justify-content: center;
+  align-content: center;
+  bottom:0;
+  padding-top: 5rem;
+  margin: auto;
+}
+.e-card{
+  width: auto;
+  height: auto;
+}
+.e-dropdown .dropdown-toggle{
+  display: none;
+  color: black;
+}
+@media screen and (max-width: 700px)
+{
+  .card-horizontal {
+    display: inline!important;
+    flex-shrink: 0;
 
+  }
 
+  .event-card
+  #images
+  {
+    width: 50%;
+    height: 0.5 rem;
+  }
+  .e-dropdown .dropdown-toggle{
+    display: inline;
+    color: black;
+  }
+  .e-dropdown .dropdownMenu2{
+    transform: none;
+  }
+  .event-body .event-title{
+    display: none;
+  }
+  .buttons{
+    justify-content: center;
+    align-content: center;
+    bottom:0;
+    padding: 0;
+    margin: auto;
+  }
+}
