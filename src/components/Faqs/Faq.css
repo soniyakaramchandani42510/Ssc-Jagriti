@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.faqOuter h1 {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 3rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.faqOuter * {
+  font-family: 'Roboto', 'Poppins', sans-serif;
+}
+
+.faqOuter details {
+  border-radius: 5px;
+  border: 1px solid #dce0e8;
+  margin: 10px 0;
+}
+
+.faqOuter summary {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.faqOuter .faq__content {
+  padding: 0 16px;
+}

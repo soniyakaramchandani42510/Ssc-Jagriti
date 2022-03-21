@@ -1,15 +1,34 @@
 .carousel {
+  position: relative;
+  width: 50%;
+  /* align-items: center; */
+  margin: auto !important;
+}
+
+.throwbackOuter h1 {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.throwbackInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.throwbackDescription {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel {
     position: relative;
-    width: 50%;
+    width: 100%;
     /* align-items: center; */
     margin: auto !important;
+  }
 }
-@media screen and (max-width: 600px) {
-    .carousel {
-        position: relative;
-        width: 100%;
-        /* align-items: center; */
-        margin: auto !important;
-    }
-   }
-   
