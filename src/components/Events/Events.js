@@ -2,6 +2,8 @@ import React from 'react'
 import './Events.css'
 import eventImage from '../../Assets/events.png'
 import background1Image from '../../Assets/background1.png'
+import questionBackground from '../../Assets/questionBackground.jpg'
+import { events } from '../../constants'
 
 function Events(props) {
   function overView() {
@@ -24,43 +26,41 @@ function Events(props) {
           <a href='#eventCards'>
             <button className='competitionsBtn'>Competitions</button>
           </a>
-          <a href='/guesttalk'>
+          {/* <a href='/guesttalk'>
             <button className='guestTalkBtn'>Guest Talks</button>
-          </a>
+          </a> */}
         </div>
         <p className='para'>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat ad
+          {/* Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat ad
           iste ipsa omnis molestias, modi sunt iusto nisi necessitatibus
           consequuntur ducimus laborum saepe cumque alias unde non expedita
-          molestiae excepturi.
+          molestiae excepturi. */}
         </p>
       </div>
       <div id='eventCards'>
-        <div className='eventCard'>
-          <img src={background1Image} className='eventCardImg' />
-          <div className='card event-card'>
-            <div>
-              <div className='eventCardOuter'>
-                <div>
-                  <img
-                    id='images'
-                    src={require('../../Assets/events.png')}
-                    alt=''
-                  />
-                </div>
-                <div className='card-body event-body'>
-                  <div className='row event-title card-title cardTitles'>
-                    <div id='overview' onClick={overView}>
-                      Overview
-                    </div>
-                    <div id='timeline' onClick={timeLine}>
-                      Timeline
-                    </div>
-                    <div id='contacts' onClick={contacts}>
-                      Contacts
-                    </div>
+        {events.map((event) => (
+          <div className='eventCard'>
+            <img src={background1Image} className='eventCardImg' />
+            <div className='card event-card'>
+              <div className='eventCardOuterMax'>
+                <div className='eventCardOuter'>
+                  <div>
+                    <img id='images' src={questionBackground} alt='' />
                   </div>
-                  <div className='dropdown e-dropdown'>
+                  <div className='card-body event-body'>
+                    <div className='cardTitle'>{event.name}</div>
+                    <div className='row event-title card-title cardTitles'>
+                      <div id='overview' onClick={overView}>
+                        Overview
+                      </div>
+                      <div id='timeline' onClick={timeLine}>
+                        Timeline
+                      </div>
+                      <div id='contacts' onClick={contacts}>
+                        Contacts
+                      </div>
+                    </div>
+                    {/* <div className='dropdown e-dropdown'>
                     <div
                       className=' card-title dropdown-toggle'
                       type='button'
@@ -97,14 +97,14 @@ function Events(props) {
                         Contacts
                       </button>
                     </div>
-                  </div>
+                  </div> */}
 
-                  <div className='card-text event-text cardText'>
-                    {props.events}
-                  </div>
-                  <div className='eventButtons'>
-                    <button>Registration: Opens soon!</button>
-                    {/* <div className='col-sm'>
+                    <div className='card-text event-text cardText'>
+                      {event.content}
+                    </div>
+                    <div className='eventButtons'>
+                      <button>Registration: Opens soon!</button>
+                      {/* <div className='col-sm'>
                       <a id='problem' href='#' className='btn'>
                         View Problem Statement
                       </a>
@@ -114,12 +114,13 @@ function Events(props) {
                         Register
                       </a>
                     </div> */}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
 
       {/* template */}

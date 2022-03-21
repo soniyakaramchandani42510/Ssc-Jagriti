@@ -154,6 +154,7 @@
   position: relative;
   padding: 60px 20px;
   overflow: hidden;
+  margin: 60px 0;
 }
 
 .eventCardImg {
@@ -161,20 +162,23 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
 }
 
 .eventCardOuter {
   display: flex;
   width: 100%;
+  min-height: 360px;
 }
 
 .eventCardOuter img {
   height: 100% !important;
+  object-fit: cover;
 }
 
 .eventCard .card-body {
   width: 100% !important;
-  padding: 40px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
 }
@@ -208,4 +212,56 @@
   background: #dd6a2b;
   border-radius: 3.4px;
   padding: 0 20px;
+  margin-top: 20px;
+}
+
+.eventCardOuter .cardTitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+@media screen and (max-width: 769px) {
+  .eventCardOuter {
+    flex-direction: column;
+  }
+
+  .eventCardOuter img {
+    width: 100% !important;
+  }
+
+  .eventCard .card-body {
+    padding: 20px;
+  }
+
+  .eventCard .cardTitles {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    font-size: 1rem;
+    justify-content: center;
+  }
+
+  .eventCardOuter .cardTitle {
+    text-align: center;
+  }
+
+  .eventCard .cardText {
+    text-align: center !important;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+
+  .eventButtons {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+  }
+
+  .eventButtons button {
+    margin-top: 20px;
+  }
 }
