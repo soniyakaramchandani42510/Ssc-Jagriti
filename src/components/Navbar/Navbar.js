@@ -3,9 +3,13 @@ import './Navbar.css'
 import { Nav, NavDropdown, Container } from 'react-bootstrap'
 import logoImage from '../../Assets/logo.svg'
 
-function Navbar({ navbarInvisible }) {
+function Navbar({ navbarInvisible, navbarWhite }) {
   return (
-    <div class={`navbarOuter ${navbarInvisible ? 'navbarInvisible' : ''}`}>
+    <div
+      class={`navbarOuter ${navbarInvisible ? 'navbarInvisible' : ''} ${
+        navbarWhite ? 'navbarWhite' : ''
+      }`}
+    >
       <nav className='navbar navbar-expand-lg navbar-light bg-light'>
         <div className='container-fluid'>
           <a className='navbar-brand' href='/'>

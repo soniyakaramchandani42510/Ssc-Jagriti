@@ -1,104 +1,211 @@
 .competitions {
-    margin-left: 30%;
-    margin-top: 20%;
-    font-weight: bolder;
+  margin-left: 30%;
+  margin-top: 20%;
+  font-weight: bolder;
 }
-.guest{
-    margin-left: 20%;
-    font-weight: bolder;
-    cursor: pointer;
-    text-decoration: none;
+.guest {
+  margin-left: 20%;
+  font-weight: bolder;
+  cursor: pointer;
+  text-decoration: none;
 }
 .para {
-    margin-left: 33%;
-    margin-right: 35%;
-    margin-top: 5%;
+  margin-left: 33%;
+  margin-right: 35%;
+  margin-top: 5%;
 }
 .event-card {
-  width:auto;
+  width: auto;
   height: auto;
 }
 .card-horizontal {
-  display: flex!important;
+  display: flex !important;
   flex: 1 1 auto !important;
   justify-content: center;
   align-content: center;
 }
-.event-body .event-text{
+.event-body .event-text {
   margin-top: 2em;
   justify-content: center;
   align-content: center;
 }
-#overview{
-    cursor: pointer;
-    font-weight: bolder;
+#overview {
+  cursor: pointer;
+  font-weight: bolder;
+  text-align: left;
 }
-#timeline{
-    cursor: pointer;
-    font-weight: bolder;
+#timeline {
+  cursor: pointer;
+  font-weight: bolder;
+  text-align: left;
 }
-#contacts{
-    cursor: pointer;
-    font-weight: bolder;
+#contacts {
+  cursor: pointer;
+  font-weight: bolder;
+  text-align: left;
 }
-.event-card
-#images
-{
+.event-card #images {
   width: 300px;
   height: 300px;
 }
-#problem{
-    font-weight: bolder;
-    color: orange;
+#problem {
+  font-weight: bolder;
+  color: orange;
 }
-#register{
-    color: red;
-    font-weight: bolder;
+#register {
+  color: red;
+  font-weight: bolder;
 }
-.buttons{
+.buttons {
   justify-content: center;
   align-content: center;
-  bottom:0;
+  bottom: 0;
   padding-top: 5rem;
   margin: auto;
 }
-.e-card{
+.e-card {
   width: auto;
   height: auto;
 }
-.e-dropdown .dropdown-toggle{
+.e-dropdown .dropdown-toggle {
   display: none;
   color: black;
 }
-@media screen and (max-width: 700px)
-{
+@media screen and (max-width: 700px) {
   .card-horizontal {
-    display: inline!important;
+    display: inline !important;
     flex-shrink: 0;
-
   }
 
-  .event-card
-  #images
-  {
+  .event-card #images {
     width: 50%;
     height: 0.5 rem;
   }
-  .e-dropdown .dropdown-toggle{
+  .e-dropdown .dropdown-toggle {
     display: inline;
     color: black;
   }
-  .e-dropdown .dropdownMenu2{
+  .e-dropdown .dropdownMenu2 {
     transform: none;
   }
-  .event-body .event-title{
+  .event-body .event-title {
     display: none;
   }
-  .buttons{
+  .buttons {
     justify-content: center;
     align-content: center;
-    bottom:0;
+    bottom: 0;
     padding: 0;
     margin: auto;
   }
+}
+
+.eventsOuter .events {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.eventsButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eventsButton .competitionsBtn {
+  width: 159px;
+  height: 36px;
+  background: #d95c29;
+  box-shadow: 2.28445px 5.71113px 7.00533px rgba(157, 108, 63, 0.12);
+  border-radius: 3.50266px;
+  color: white;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.competitionsBtn:disabled {
+  opacity: 0.7;
+}
+
+.eventsButton .guestTalkBtn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #d95c29;
+  margin-left: 20px;
+  background: transparent;
+}
+
+.eventsOuter .events p {
+  width: 100%;
+  margin: 40px 0;
+  text-align: center;
+  width: 80%;
+}
+
+.eventCardOuter {
+  width: 600px;
+}
+
+.eventCard {
+  position: relative;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.eventCardImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.eventCardOuter {
+  display: flex;
+  width: 100%;
+}
+
+.eventCardOuter img {
+  height: 100% !important;
+}
+
+.eventCard .card-body {
+  width: 100% !important;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.eventCard .cardTitles {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.cardTitles > div {
+  width: max-content;
+}
+
+.eventCard .cardText {
+  text-align: left !important;
+  justify-content: flex-start;
+}
+
+.eventButtons {
+  text-align: left;
+  display: flex;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.eventButtons button {
+  height: 32px;
+  color: white;
+  font-weight: 400;
+  background: #dd6a2b;
+  border-radius: 3.4px;
+  padding: 0 20px;
 }

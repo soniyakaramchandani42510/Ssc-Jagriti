@@ -206,6 +206,11 @@ ul li {
     margin: 5px;
   }
 
+  .contactUsLeft .logoIcons > a {
+    margin-right: 7.5px !important;
+    margin-left: 7.5px !important;
+  }
+
   .contactUsContainer {
     display: flex;
     justify-content: center;

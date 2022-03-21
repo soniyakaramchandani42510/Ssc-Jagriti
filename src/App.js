@@ -75,7 +75,7 @@ function App() {
           </Route>
 
           <Route path='/events'>
-            <Navbar />
+            <Navbar navbarWhite />
             <Events
               events={events}
               setEvents={setEvents}
