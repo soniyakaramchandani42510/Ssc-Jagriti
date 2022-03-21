@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+.faqOuter {
+  min-height: 80vh;
+}
+
 .faqOuter h1 {
   width: 100%;
   text-align: center;
@@ -10,6 +14,7 @@
 
 .faqOuter * {
   font-family: 'Roboto', 'Poppins', sans-serif;
+  transition: 0.5s ease-in-out;
 }
 
 .faqOuter details {
@@ -21,9 +26,10 @@
 .faqOuter summary {
   margin: 0;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .faqOuter .faq__content {
   padding: 0 16px;
+  font-size: 1rem;
 }

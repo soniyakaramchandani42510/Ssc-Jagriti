@@ -1,94 +1,229 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  /* footer {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* footer {
     position: absolute;
     width: 100%;
     bottom: 0;
   } */
-  
-  ul {
-    margin: 0;
-    padding: 0;
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+#contact a {
+  color: #a683e3;
+  margin: 10px;
+}
+
+#contact {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.89);
+  padding: 20px 0;
+}
+
+.icon {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s, box-shadow 0.5s;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 12%), 0 2px 2px rgb(0 0 0 / 24%);
+}
+
+#icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 5px 5px rgb(0 0 0 / 12%), 0 3px 5px rgb(0 0 0 / 24%);
+}
+
+#contact p {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 426px) {
+  #icon {
+    width: 30px;
+    height: 30px;
   }
-  
+
   ul li {
-    list-style: none;
+    font-size: 12px;
   }
-  
-  #contact a {
-    color: #a683e3;
-    margin: 10px;
+
+  #contact p {
+    font-size: 10px;
   }
-  
-  #contact {
-    color: #fff;
+}
+
+@media screen and (min-width: 2560px) {
+  #icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  ul li {
+    font-size: 20px;
+  }
+
+  #contact p {
+    font-size: 16px;
+  }
+}
+#number {
+  text-align: left;
+}
+
+.contactUsContainer hr {
+  width: 250px !important;
+}
+
+.footerOuter .footerLogos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.footerLogosOuter {
+  width: 100%;
+  padding: 0 37.5px;
+}
+
+.footerLogos {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerLogos > div {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 16px 0;
+}
+
+.footerLogos img {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.contactUsContainer p {
+  margin: 0;
+}
+
+.contactUsContainer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+}
+
+.contactUsLeft {
+  width: 70%;
+  padding: 0 37.5px;
+  /* border-right: 1px solid gray; */
+}
+
+.contactUsLeft p {
+  font-weight: 300 !important;
+}
+
+.contactUsLeft a {
+  text-decoration: none;
+  color: white !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.contactUsLeft a:hover {
+  opacity: 0.8;
+}
+
+.contactUsLeft h3 {
+  font-weight: 400;
+}
+
+.contactUsLeft .logoIcons {
+  margin-top: 15px;
+}
+
+.contactUsLeft .logoIcons > a {
+  margin-right: 15px !important;
+}
+
+.contactUsLeft .logoIcons svg {
+  height: 20px;
+}
+
+.contactUsRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0 37.5px;
+}
+
+.contactUsRight img {
+  height: 120px;
+  filter: brightness(120%);
+}
+
+@media screen and (max-width: 750px) {
+  .contactUsRight {
+    display: none;
+  }
+
+  .footerLogos {
+    flex-wrap: wrap;
+  }
+
+  .footerLogos > div {
+    width: calc(50% - 20px);
+    margin: 5px;
+  }
+
+  .contactUsContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .contactUsLeft {
+    width: 100%;
+  }
+
+  #number {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 400px;
-    background-color: rgba(0, 0, 0, .89);
+    width: 100%;
   }
-  
-  .icon {
-    background-color: #fff;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 1s, box-shadow 0.5s;
-    box-shadow: 0 2px 3px rgb(0 0 0 / 12%), 0 2px 2px rgb(0 0 0 / 24%);
+
+  .footerLogosOuter div {
+    text-align: center;
   }
-  
-  #icon-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .icon:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 3px 5px 5px rgb(0 0 0 / 12%), 0 3px 5px rgb(0 0 0 / 24%);
-  }
-  
-  #contact p {
-      font-size: 14px;
-  }
-  
-  @media screen and (max-width: 426px) {
-   #icon {
-     width: 30px;
-     height: 30px;
-    }
-    
-    ul li {
-      font-size: 12px;
-    }
-    
-    #contact p {
-      font-size: 10px;
-    }
-  }
-  
-  @media screen and (min-width: 2560px) {
-   #icon {
-     width: 50px;
-     height: 50px;
-    }
-    
-    ul li {
-      font-size: 20px;
-    }
-    
-    #contact p {
-      font-size: 16px;
-    }
-  }
-  #number{
-    text-align: left;
-  }
+}

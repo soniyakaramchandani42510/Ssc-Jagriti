@@ -3,6 +3,7 @@ import '../GuestTalk/GuestTalk'
 import './Testimonial.css'
 import testimonial1Image from '../../Assets/testimonial1.jpeg'
 import testimonial2Image from '../../Assets/testimonial2.jpeg'
+import testimonial3Image from '../../Assets/testimonial3.jpeg'
 
 function Testimonial() {
   return (
@@ -60,17 +61,20 @@ function Testimonial() {
               <div class='card_image'>
                 <img
                   className='photo'
-                  src='https://picsum.photos/500/300/?image=2'
+                  src={testimonial3Image}
                   alt='testimonial'
                 />
               </div>
               <div class='card_content card-color3'>
-                <h2 class='card_title'>Jen Sincero</h2>
+                <h2 class='card_title'>Anupam Bansal</h2>
+                <h4 class='card_subtitle'>Founder, Kashi Utkarsh</h4>
                 <p class='card_text'>
-                  If you’re serious about changing your life, you’ll find a way.
-                  If you’re not, you’ll find an excuse. If you’re serious about
-                  changing your life, you’ll find a way. If you’re not, you’ll
-                  find an excuse.
+                  Being invited to speak in Jagriti '21 was one of the most
+                  amazing experiences I had last year. I was able to share my
+                  experiences about founding Kashi Utkarsh and had an open
+                  discussion about how one can contribute to the society. It
+                  really helped me to connect with the change makers of tomorrow
+                  and pass forward my learnings.
                 </p>
               </div>
             </div>
