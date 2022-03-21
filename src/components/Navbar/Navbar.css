@@ -10,10 +10,7 @@
   list-style: none;
   font-family: 'Arvo', serif;
   transition: all .3s linear;
-  
-
 }
-
 
 html {
   font-size: 100%;
@@ -29,6 +26,12 @@ section {
 .nav-item{
   margin-right: 40px;
 }
+
+.navbar-brand img {
+  width: 31px;
+  height: 41px;
+}
+
 header {
   position: sticky;
   top: 0;

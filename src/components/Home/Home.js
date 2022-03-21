@@ -11,19 +11,19 @@ function Home() {
           <div className="hero-content">
             <div className="homeimgContainer">
               <img className="homeimg" src={homeImage} />
+              <p>JAGRITI</p>
+              <div className="breakLine"></div>
             </div>
             {/* <h1 className="hero-heading">Welcome to Jagriti.</h1> */}
             <p className="paras">
-              Lorem ipsum dolor Lorem ipsum dolor sit amet. sit amet consectetur
-              adipisicing elit. Odit, id
+              Welcome to the annual socio-awareness weekend of IIT BHU
             </p>
-            <p className="paras">Lorem ipsum dolor sit amet.</p>
 
             <div class="box">
               <button class="btn1 btn2 button">
                 <a href="/events">Explore Events &#x0003E;</a>
               </button>
-              <button class="btn1 btn3 button">Workshops &#x0003E;</button>
+              <button class="btn1 btn3 button">Guest Talks &#x0003E;</button>
             </div>
 
             {/* <p>Best websites for developing companies.</p> */}

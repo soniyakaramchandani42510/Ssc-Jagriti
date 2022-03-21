@@ -1,63 +1,99 @@
-.timer-container{
-    /* text-align: center; */
-    /* height: 50vh; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-.date{
-    margin-left: 20%;
+* {
+  font-family: "Poppins", sans-serif;
 }
 
-.text{
-    font-weight: 900;
+.clockOuter {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.jagriti{
-    font-size: larger;
+
+.clockOuter h3 {
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 113%;
 }
-#days{
-    background-color: #F2E0D2;
-    height: 19%;
-    width: fit-content;
-    margin-bottom: 20%;
-    margin-left: 12%;
-    margin-right: 20px
+
+.clockLeft {
+  padding-left: 5%;
 }
-#hours{
-    background-color: #F2E0D2;
-    height: 19%;
-    width: fit-content;
-    margin-right: 20px
+
+.timerContainer {
+  display: flex;
 }
-#minutes{
-    background-color: #F2E0D2;
-    height: 19%;
-    width: fit-content;
-    margin-right: 20px
+
+.timerBox {
+  background: #f2e0d2;
+  border-radius: 4px;
+  padding: 20px;
+  width: 120px;
+  margin-right: 20px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-#seconds{
-    background-color: #F2E0D2;
-    height: 19%;
-    width: fit-content;
+
+.timerBox p {
+  font-weight: 700;
+  font-size: 48.5845px;
+  text-align: center;
+  color: #dd6a2b;
+  margin: 20px 0 10px 0;
 }
-#imgs{
-    margin-left: 70%;
-    /* margin-top: -45%; */
-    margin-top: -37%;
+
+.timerBox small {
+    margin: 0 auto;
 }
-@media screen and (max-width: 650px){
-#imgs{
-    display: none;
+
+.clockRight img {
+    width: 400px;
 }
-}
-@media screen and (max-width: 875px){
-    #seconds{
+
+@media screen and (max-width: 1025px) {
+    .clockOuter {
+        min-height: 80vh;
+    }
+
+    .clockRight {
         display: none;
     }
+    .clockLeft {
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    @media screen and (max-width: 370px){
-        .clock{
-            margin-left: -31px;
-        }
+    .timerContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
     }
+    .timerBox {
+        margin-right: 0;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .clockOuter {
+        min-height: 80vh;
+    }
+
+    .seconds {
+        display: none;
+    }
+
+    .timerBox {
+        padding: 10px;
+        width: 80px;
+    }
+
+    .timerBox p {
+        font-size: 38px;
+    }
+}

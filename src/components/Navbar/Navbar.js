@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { Nav, NavDropdown, Container } from "react-bootstrap";
-import logoImage from "../../Assets/logo.png";
+import logoImage from "../../Assets/logo.svg";
 
 function Navbar() {
   return (

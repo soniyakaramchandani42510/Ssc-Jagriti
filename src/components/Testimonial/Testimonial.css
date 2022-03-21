@@ -1,0 +1,43 @@
+.testimonialOuter {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.testimonialOuter h1 {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.testimonialOuter .cards {
+    margin-top: 40px;
+    /* background: #F2E0D2; */
+}
+
+.testimonialOuter .cards_item {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonialOuter .card {
+    width: 100%;
+    max-width: 400px;
+}
+
+.testimonialOuter .card_content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 769px) {
+    .testimonialOuter .cards {
+        justify-content: center;
+    }
+}

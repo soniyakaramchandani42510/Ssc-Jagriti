@@ -1,13 +1,14 @@
 import React from "react";
-import Home from "../Home/Home";
+import "../GuestTalk/GuestTalk";
+import "./Testimonial.css";
 
 function Testimonial() {
   return (
     <>
-      <div class="main">
+      <div className="testimonialOuter">
         <h1>Testimonials</h1>
-        <ul class="cards">
-          <li class="cards_item">
+        <div class="cards">
+          <div class="cards_item">
             <div class="card">
               <div class="card_image">
                 <img
@@ -21,11 +22,10 @@ function Testimonial() {
                   Demo of pixel perfect pure CSS simple responsive card grid
                   layout
                 </p>
-                <button class="btn card_btn">Register Now</button>
               </div>
             </div>
-          </li>
-          <li class="cards_item">
+          </div>
+          <div class="cards_item">
             <div class="card">
               <div class="card_image">
                 <img
@@ -39,12 +39,11 @@ function Testimonial() {
                   Demo of pixel perfect pure CSS simple responsive card grid
                   layout
                 </p>
-                <button class="btn card_btn">Register Now</button>
               </div>
             </div>
-          </li>
+          </div>
 
-          <li class="cards_item">
+          <div class="cards_item">
             <div class="card">
               <div class="card_image">
                 <img
@@ -58,11 +57,10 @@ function Testimonial() {
                   Demo of pixel perfect pure CSS simple responsive card grid
                   layout
                 </p>
-                <button class="btn card_btn">Register Now</button>
               </div>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </>
   );
