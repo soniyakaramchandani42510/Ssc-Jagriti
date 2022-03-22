@@ -1,13 +1,24 @@
 import React, { useState } from 'react'
 import background1Image from '../../../Assets/background1.png'
+import background2Image from '../../../Assets/background2.png'
+import background3Image from '../../../Assets/background1.png'
+import background4Image from '../../../Assets/background2.png'
+import background5Image from '../../../Assets/background1.png'
 import questionBackground from '../../../Assets/questionBackground.jpg'
 
-const EventCard = ({ event }) => {
+const EventCard = ({ event, cardNumber }) => {
   const [currentTab, setCurrentTab] = useState('overview')
+  const imgUrls = [
+    background1Image,
+    background2Image,
+    background3Image,
+    background4Image,
+    background5Image,
+  ]
 
   return (
     <div className='eventCard'>
-      <img src={background1Image} className='eventCardImg' />
+      <img src={imgUrls[cardNumber]} className='eventCardImg' />
       <div className='card event-card'>
         <div className='eventCardOuterMax'>
           <div className='eventCardOuter'>

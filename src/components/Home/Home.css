@@ -518,6 +518,10 @@ body {
   width: 30%;
 }
 
+.guesttalkBtn {
+  color: #dd6a2b !important;
+}
+
 /* @media screen and (max-width: 600px) {
   .homeimgContainer p {
     font-size: 5rem !important;

@@ -23,8 +23,10 @@ function Home() {
               <button class='btn1 btn2 button'>
                 <a href='/events'>Explore Events &#x0003E;</a>
               </button>
-              <button disabled class='btn1 btn3 button'>
-                Guest Talks &#x0003E;
+              <button class='btn1 btn3 button'>
+                <a href='/guesttalk' className='guesttalkBtn'>
+                  Guest Talks &#x0003E;
+                </a>
               </button>
             </div>
 

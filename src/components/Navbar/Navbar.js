@@ -1,56 +1,66 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.css'
 import { Nav, NavDropdown, Container } from 'react-bootstrap'
 import logoImage from '../../Assets/logo.svg'
 
 function Navbar({ navbarInvisible, navbarWhite }) {
+  const [navbarOpen, setNavbarOpen] = useState(false)
+
   return (
     <div
-      class={`navbarOuter ${navbarInvisible ? 'navbarInvisible' : ''} ${
+      className={`navbarOuter ${navbarInvisible ? 'navbarInvisible' : ''} ${
         navbarWhite ? 'navbarWhite' : ''
       }`}
     >
-      <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-        <div className='container-fluid'>
-          <a className='navbar-brand' href='/'>
-            {' '}
-            <img src={logoImage} />
-          </a>
-
-          <button
-            className='navbar-toggler'
-            type='button'
-            data-bs-toggle='collapse'
-            data-bs-target='#navbarSupportedContent'
-            aria-controls='navbarSupportedContent'
-            aria-expanded='false'
-            aria-label='Toggle navigation'
-          >
-            <span className='navbar-toggler-icon'></span>
-          </button>
-          <div className='collapse navbar-collapse' id='navbarSupportedContent'>
-            <ul className='navbar-nav ms-auto  mb-lg-0  '>
-              <li className='nav-item '>
-                <a className='nav-link' href='/about'>
-                  About
-                </a>
-              </li>
-              <li className='nav-item d-flex'>
-                <a className='nav-link' href='/events'>
-                  Events
-                </a>
-              </li>
-              {/* <li className='nav-item d-flex'>
-                <a className='nav-link' href='/Workshops'>
-                  Announcements
-                </a>
-              </li> */}
-              {/* <li className="nav-item d-flex">
-                <a className="nav-link" href="/Contact">Contact</a>
-              </li> */}
-            </ul>
-          </div>
+      <nav class='navbar navbar-light'>
+        <a className='navbar-brand' href='/'>
+          {' '}
+          <img src={logoImage} />
+        </a>
+        <div
+          className={`hamburger ${navbarOpen ? 'hamburgerOpen' : ''}`}
+          onClick={() => setNavbarOpen(!navbarOpen)}
+        >
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
+        <div
+          className={`linkContainer ${navbarOpen ? 'linkContainerOpen' : ''}`}
+        >
+          <a className='nav-link' href='/about'>
+            About
+          </a>
+          <a className='nav-link' href='/events'>
+            Events
+          </a>
+        </div>
+        {/* <button
+          class='navbar-toggler'
+          type='button'
+          data-toggle='collapse'
+          data-target='#navbarSupportedContent'
+          aria-controls='navbarSupportedContent'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+        >
+          <span class='navbar-toggler-icon'></span>
+        </button> */}
+
+        {/* <div class='collapse navbar-collapse' id='navbarSupportedContent'>
+          <ul class='navbar-nav mr-auto'>
+            <li class='nav-item active'>
+              <a className='nav-link' href='/about'>
+                About
+              </a>
+            </li>
+            <li class='nav-item'>
+              <a className='nav-link' href='/events'>
+                Events
+              </a>
+            </li>
+          </ul>
+        </div> */}
       </nav>
     </div>
   )
