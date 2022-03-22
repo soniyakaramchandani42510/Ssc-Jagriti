@@ -24,7 +24,7 @@ function Home() {
                 <a href='/events'>Explore Events &#x0003E;</a>
               </button>
               <button class='btn1 btn3 button'>
-                <a href='/guesttalk' className='guesttalkBtn'>
+                <a href='/events?guestTalks=true' className='guesttalkBtn'>
                   Guest Talks &#x0003E;
                 </a>
               </button>

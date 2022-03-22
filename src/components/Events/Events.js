@@ -1,9 +1,14 @@
 import React, { useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import './Events.css'
 import { events } from '../../constants'
 import EventCard from './EventCard/EventCard'
 function Events(props) {
-  const [currentPage, setCurrentPage] = useState('competitions')
+  const { search } = useLocation()
+  const isGuestTalk = new URLSearchParams(search)?.get('guestTalks')
+  const [currentPage, setCurrentPage] = useState(
+    isGuestTalk ? 'guestTalks' : 'competitions'
+  )
 
   function overView() {
     props.setEvents(
