@@ -40,11 +40,11 @@ function Navbar({ navbarInvisible, navbarWhite }) {
                   Events
                 </a>
               </li>
-              <li className='nav-item d-flex'>
+              {/* <li className='nav-item d-flex'>
                 <a className='nav-link' href='/Workshops'>
                   Announcements
                 </a>
-              </li>
+              </li> */}
               {/* <li className="nav-item d-flex">
                 <a className="nav-link" href="/Contact">Contact</a>
               </li> */}

@@ -75,7 +75,7 @@ function App() {
           </Route>
 
           <Route path='/events'>
-            <Navbar navbarWhite />
+            <Navbar navbarInvisible />
             <Events
               events={events}
               setEvents={setEvents}
@@ -86,11 +86,11 @@ function App() {
             <Footer />
           </Route>
 
-          <Route path='/guesttalk'>
+          {/* <Route path='/guesttalk'>
             <Navbar />
             <GuestTalk />
             <Footer />
-          </Route>
+          </Route> */}
 
           <Route path='/'>
             <Navbar />
