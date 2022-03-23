@@ -86,11 +86,11 @@ function App() {
             <Footer />
           </Route>
 
-          <Route path='/guesttalk'>
+          {/* <Route path='/guesttalk'>
             <Navbar />
             <GuestTalk />
             <Footer />
-          </Route>
+          </Route> */}
 
           <Route path='/'>
             <Navbar />

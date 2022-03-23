@@ -66,7 +66,11 @@ Our guests are prodigious social entrepreneurs and social workers, here to speak
         <div id='eventCards'>
           <h1>Competitions</h1>
           {events.map((event, index) => (
-            <EventCard event={event} cardNumber={index} />
+            <EventCard
+              event={event}
+              cardNumber={index}
+              key={event.name + index}
+            />
           ))}
         </div>
       )}

@@ -1,16 +1,21 @@
+import shareASkillImage from './Assets/shareASkill.jpeg'
+import shareASkillMobileImage from './Assets/shareASkillMobile.jpeg'
+
 export const events = [
   {
     name: 'Share A Skill',
     content:
       'In this event, participants will be talking to students via phone calls to help them learn something new and guide them wherever they need it. The event provides you with the chance to get exposure to the different kinds of problems faced by the students, and by mentoring them, participants can bring positive change in their lives.',
+    image: shareASkillImage,
+    imageMobile: shareASkillMobileImage,
     contacts: [
       {
-        name: 'Akshat Khanna',
-        mobile: '6261683166',
+        name: 'Ritesh Tandon',
+        mobile: '6260134527',
       },
       {
-        name: 'Pranav Verma',
-        mobile: '9354030965',
+        name: 'Shambhavi Garg',
+        mobile: '7389640607',
       },
     ],
   },

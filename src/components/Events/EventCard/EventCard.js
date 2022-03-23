@@ -8,6 +8,8 @@ import questionBackground from '../../../Assets/questionBackground.jpg'
 
 const EventCard = ({ event, cardNumber }) => {
   const [currentTab, setCurrentTab] = useState('overview')
+  const isMobile = window?.outerWidth < 775
+
   const imgUrls = [
     background1Image,
     background2Image,
@@ -23,7 +25,17 @@ const EventCard = ({ event, cardNumber }) => {
         <div className='eventCardOuterMax'>
           <div className='eventCardOuter'>
             <div>
-              <img id='images' src={questionBackground} alt='' />
+              <img
+                id='images'
+                src={
+                  event.image
+                    ? isMobile
+                      ? event.imageMobile
+                      : event.image
+                    : questionBackground
+                }
+                alt=''
+              />
             </div>
             <div className='card-body event-body'>
               <div className='cardTitle'>{event?.name}</div>
@@ -85,8 +97,8 @@ const EventCard = ({ event, cardNumber }) => {
                 {currentTab === 'overview'
                   ? event?.content
                   : currentTab === 'contacts'
-                  ? event?.contacts.map((contact) => (
-                      <div className='contactsOuter'>
+                  ? event?.contacts.map((contact, index) => (
+                      <div className='contactsOuter' key={contact.name + index}>
                         <div className='contactName'>{contact?.name}</div>
                         <div className='contactNumber'>{contact?.mobile}</div>
                       </div>
