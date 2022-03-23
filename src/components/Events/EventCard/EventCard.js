@@ -50,45 +50,6 @@ const EventCard = ({ event, cardNumber }) => {
                   Contacts
                 </div>
               </div>
-              {/* <div className='dropdown e-dropdown'>
-                    <div
-                      className=' card-title dropdown-toggle'
-                      type='button'
-                      id='dropdownMenu2'
-                      data-toggle='dropdown'
-                      aria-haspopup='true'
-                      aria-expanded='false'
-                    >
-                      Overview
-                    </div>
-                    <div
-                      className='dropdown-menu'
-                      aria-labelledby='dropdownMenu2'
-                    >
-                      <button
-                        className='dropdown-item'
-                        type='button'
-                        onClick={overView}
-                      >
-                        Overview
-                      </button>
-                      <button
-                        className='dropdown-item'
-                        type='button'
-                        onClick={timeLine}
-                      >
-                        Timeline
-                      </button>
-                      <button
-                        className='dropdown-item'
-                        type='button'
-                        onClick={contacts}
-                      >
-                        Contacts
-                      </button>
-                    </div>
-                  </div> */}
-
               <div
                 className={`card-text event-text cardText ${
                   currentTab === 'contacts' ? 'cardContactsText' : ''
@@ -106,7 +67,15 @@ const EventCard = ({ event, cardNumber }) => {
                   : ''}
               </div>
               <div className='eventButtons'>
-                <button>Registration: Opens soon!</button>
+                {event?.registrationLink ? (
+                  <a href={event?.registrationLink} target='_blank'>
+                    <button className='activeBtn'>Register Now</button>
+                  </a>
+                ) : (
+                  <button className='disabledBtn'>
+                    {'Registration: Opens soon!'}
+                  </button>
+                )}
                 {/* <div className='col-sm'>
                       <a id='problem' href='#' className='btn'>
                         View Problem Statement

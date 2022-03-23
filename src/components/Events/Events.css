@@ -248,6 +248,15 @@
   margin-top: 20px;
 }
 
+.eventButtons .activeBtn:hover {
+  opacity: 0.9;
+}
+
+.eventButtons .disabledBtn {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
 .eventCardOuter .cardTitle {
   font-size: 1.6rem;
   font-weight: 600;
