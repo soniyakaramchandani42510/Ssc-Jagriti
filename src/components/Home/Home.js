@@ -10,11 +10,10 @@ function Home() {
         <section className='hero'>
           <div className='hero-content'>
             <div className='homeimgContainer'>
-              <img className='homeimg' src={homeImage} />
+              <img className='homeimg' src={homeImage} alt="Home page"/>
               <p>JAGRITI</p>
               <div className='breakLine'></div>
             </div>
-            {/* <h1 className="hero-heading">Welcome to Jagriti.</h1> */}
             <p className='paras'>
               Welcome to the annual socio-awareness weekend of IIT BHU
             </p>

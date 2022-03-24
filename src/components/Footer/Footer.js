@@ -13,19 +13,19 @@ function Footer() {
         <div className='footerLogosOuter'>
           <div className='row footerLogos'>
             <div>
-              <img src={sahyogLogo} />
+              <img src={sahyogLogo} alt="Sahyog Logo" />
               <h6>Sahyog Club</h6>
             </div>
             <div>
-              <img src={kuLogo} />
+              <img src={kuLogo} alt="Kashi Utkarsh Logo" />
               <h6>Kashi Utkarsh</h6>
             </div>
             <div>
-              <img src={spcLogo} />
+              <img src={spcLogo} alt="Social Projects Club Logo" />
               <h6>Social Projects' Club</h6>
             </div>
             <div>
-              <img src={hhcLogo} />
+              <img src={hhcLogo} alt="Health & Hygiene Club Logo" />
               <h6>Health and Hygiene Club</h6>
             </div>
           </div>
@@ -88,42 +88,9 @@ function Footer() {
             </div>
           </div>
           <div className='contactUsRight'>
-            <img src={sscLogo} />
+            <img src={sscLogo} alt="Social Service Council Logo"/>
           </div>
         </div>
-
-        {/* <div>
-  <ul>
-    <div id="icon-container">
-      <a href="#">
-        <div className="icon">
-          <li><i className="fab fa-twitter"></i></li>
-        </div>
-      </a>
-      <a href="#">
-        <div className="icon">
-          <li><i className="fab fa-instagram"></i></li>
-        </div>
-      </a>
-      <a href="#">
-        <div className="icon">
-          <li><i className="fab fa-facebook-f"></i></li>
-        </div>
-      </a>
-      <a href="#">
-        <div className="icon">
-          <li><i className="far fa-envelope"></i></li>
-        </div>
-      </a>
-      <a href="#">
-        <div className="icon">
-          <li><i className="fab fa-free-code-camp"></i></li>
-        </div>
-      </a>
-    </div>
-  </ul>
-  </div>
-  <p>SOCIAL SERVICE COUNCIL</p> */}
       </footer>
     </div>
   )

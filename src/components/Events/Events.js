@@ -10,18 +10,6 @@ function Events(props) {
     isGuestTalk ? 'guestTalks' : 'competitions'
   )
 
-  function overView() {
-    props.setEvents(
-      `Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempore consequuntur distinctio enim velit minima et sunt quas quibusdam, animi consectetur error pariatur soluta. Odit iste nemo officia numquam ut!`
-    )
-  }
-  function timeLine() {
-    props.setEvents(`kdiwjdoqwkdo`)
-  }
-  function contacts() {
-    props.setEvents(`dndidj`)
-  }
-
   return (
     <div className='eventsOuter'>
       {/* main logic */}

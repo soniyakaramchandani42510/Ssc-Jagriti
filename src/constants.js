@@ -8,7 +8,7 @@ export const events = [
       'In this event, participants will be talking to students via phone calls to help them learn something new and guide them wherever they need it. The event provides you with the chance to get exposure to the different kinds of problems faced by the students, and by mentoring them, participants can bring positive change in their lives.',
     image: shareASkillImage,
     imageMobile: shareASkillMobileImage,
-    registrationLink: 'https://dare2compete.com/o/6VhsIj3?lb=1GOCQVy',
+    registrationLink: 'https://dare2compete.com/o/SjNLlkD?lb=1GOCQVy',
     contacts: [
       {
         name: 'Ritesh Tandon',

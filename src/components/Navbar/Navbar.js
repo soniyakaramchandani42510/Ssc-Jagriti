@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './Navbar.css'
-import { Nav, NavDropdown, Container } from 'react-bootstrap'
 import logoImage from '../../Assets/logo.svg'
 
 function Navbar({ navbarInvisible, navbarWhite }) {
@@ -15,7 +14,7 @@ function Navbar({ navbarInvisible, navbarWhite }) {
       <nav class='navbar navbar-light'>
         <a className='navbar-brand' href='/'>
           {' '}
-          <img src={logoImage} />
+          <img src={logoImage} alt="Jagriti Logo" />
         </a>
         <div
           className={`hamburger ${navbarOpen ? 'hamburgerOpen' : ''}`}
