@@ -229,6 +229,7 @@
 .eventCard .cardText {
   text-align: left !important;
   justify-content: flex-start;
+  margin-top: 20px;
 }
 
 .eventButtons {

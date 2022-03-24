@@ -76,16 +76,6 @@ const EventCard = ({ event, cardNumber }) => {
                     {'Registration: Opens soon!'}
                   </button>
                 )}
-                {/* <div className='col-sm'>
-                      <a id='problem' href='#' className='btn'>
-                        View Problem Statement
-                      </a>
-                    </div>
-                    <div className='col-sm'>
-                      <a id='register' href='#' className='btn btn-danger'>
-                        Register
-                      </a>
-                    </div> */}
               </div>
             </div>
           </div>
