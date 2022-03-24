@@ -33,9 +33,9 @@ function Navbar({ navbarInvisible, navbarWhite }) {
           <a className='nav-link' href='/events'>
             Events
           </a>
-          <a className='nav-link' href='/announcements'>
+          {/* <a className='nav-link' href='/announcements'>
             Announcements
-          </a>
+          </a> */}
         </div>
       </nav>
     </div>
