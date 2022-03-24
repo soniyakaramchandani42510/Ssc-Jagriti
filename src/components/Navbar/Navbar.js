@@ -14,7 +14,7 @@ function Navbar({ navbarInvisible, navbarWhite }) {
       <nav class='navbar navbar-light'>
         <a className='navbar-brand' href='/'>
           {' '}
-          <img src={logoImage} alt="Jagriti Logo" />
+          <img src={logoImage} alt='Jagriti Logo' />
         </a>
         <div
           className={`hamburger ${navbarOpen ? 'hamburgerOpen' : ''}`}
@@ -33,33 +33,10 @@ function Navbar({ navbarInvisible, navbarWhite }) {
           <a className='nav-link' href='/events'>
             Events
           </a>
+          <a className='nav-link' href='/announcements'>
+            Announcements
+          </a>
         </div>
-        {/* <button
-          class='navbar-toggler'
-          type='button'
-          data-toggle='collapse'
-          data-target='#navbarSupportedContent'
-          aria-controls='navbarSupportedContent'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
-        >
-          <span class='navbar-toggler-icon'></span>
-        </button> */}
-
-        {/* <div class='collapse navbar-collapse' id='navbarSupportedContent'>
-          <ul class='navbar-nav mr-auto'>
-            <li class='nav-item active'>
-              <a className='nav-link' href='/about'>
-                About
-              </a>
-            </li>
-            <li class='nav-item'>
-              <a className='nav-link' href='/events'>
-                Events
-              </a>
-            </li>
-          </ul>
-        </div> */}
       </nav>
     </div>
   )
