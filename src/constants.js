@@ -1,5 +1,7 @@
 import shareASkillImage from './Assets/shareASkill.jpeg'
 import shareASkillMobileImage from './Assets/shareASkillMobile.jpeg'
+import takeDeBaitImage from './Assets/takeDeBait.jpeg';
+import takeDeBaitMobileImage from './Assets/takeDeBaitMobile.jpeg';
 
 export const events = [
   {
@@ -24,14 +26,17 @@ export const events = [
     name: 'Take de-Bait',
     content:
       '“It is better to debate a question without settling it than to settle a question without debating it.” We are providing participants with a platform where they will be debating around the provided theme. The event aims for participants’ critical and quick thinking skills, research skills and emotional controls.',
+    image: takeDeBaitImage,
+    imageMobile: takeDeBaitMobileImage,
+    registrationLink: 'https://dare2compete.com/o/bvMIBeG?lb=1GOCQVy',
     contacts: [
       {
-        name: 'Akshat Khanna',
-        mobile: '6261683166',
+        name: 'Rishabh',
+        mobile: '9628730298',
       },
       {
-        name: 'Pranav Verma',
-        mobile: '9354030965',
+        name: 'Vedant',
+        mobile: '9324107574',
       },
     ],
   },
