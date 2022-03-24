@@ -20,7 +20,7 @@ const EventCard = ({ event, cardNumber }) => {
 
   return (
     <div className='eventCard'>
-      <img src={imgUrls[cardNumber]} className='eventCardImg' />
+      <img src={imgUrls[cardNumber]} className='eventCardImg' alt="Background"/>
       <div className='card event-card'>
         <div className='eventCardOuterMax'>
           <div className='eventCardOuter'>
@@ -68,7 +68,7 @@ const EventCard = ({ event, cardNumber }) => {
               </div>
               <div className='eventButtons'>
                 {event?.registrationLink ? (
-                  <a href={event?.registrationLink} target='_blank'>
+                  <a href={event?.registrationLink} target='_blank' rel="noreferrer">
                     <button className='activeBtn'>Register Now</button>
                   </a>
                 ) : (
