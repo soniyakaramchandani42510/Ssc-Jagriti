@@ -2,6 +2,10 @@ import shareASkillImage from './Assets/shareASkill.jpeg'
 import shareASkillMobileImage from './Assets/shareASkillMobile.jpeg'
 import takeDeBaitImage from './Assets/takeDeBait.jpeg';
 import takeDeBaitMobileImage from './Assets/takeDeBaitMobile.jpeg';
+import socialInnovationChallengeImage from './Assets/socialInnovationChallenge.png';
+import socialInnovationChallengeMobileImage from './Assets/socialInnovationChallengeMobile.png';
+import UthaanImage from './Assets/Uthaan.png';
+import UthaanMobileImage from './Assets/UthaanMobile.png';
 
 export const events = [
   {
@@ -44,14 +48,17 @@ export const events = [
     name: 'Social Innovation Challenge (SIC)',
     content:
       'Jagriti 2022 is here to provide you with a platform to think out of the box and solve a social problem using innovation and technology. The primary goal of this event is to make students aware of social entrepreneurship and design thinking for social good.',
+      image: socialInnovationChallengeMobileImage,
+      imageMobile: socialInnovationChallengeImage,
+      registrationLink: 'https://dare2compete.com/competition/social-innovation-challenge-jagriti-2022-indian-institute-of-technology-iit-bhu-varanasi-277525?lb=1GOCQVy',
     contacts: [
       {
-        name: 'Akshat Khanna',
-        mobile: '6261683166',
+        name: 'Jenifer',
+        mobile: '9348384058',
       },
       {
-        name: 'Pranav Verma',
-        mobile: '9354030965',
+        name: 'Sanskar',
+        mobile: '9702657856',
       },
     ],
   },
@@ -59,14 +66,17 @@ export const events = [
     name: 'Case Study',
     content:
       'In this event, participants will be given a case study on the condition of the bastis to brainstorm and provide business ideas on which individuals living in bastis can apply for part-time income.',
+      image: UthaanMobileImage,
+      imageMobile: UthaanImage,
+      registrationLink: 'https://dare2compete.com/o/ATa8FIq?lb=1GOCQVy',
     contacts: [
       {
-        name: 'Akshat Khanna',
-        mobile: '6261683166',
+        name: 'Yash',
+        mobile: '7841814283',
       },
       {
-        name: 'Pranav Verma',
-        mobile: '9354030965',
+        name: 'Kusuma',
+        mobile: '9640832040',
       },
     ],
   },
