@@ -25,6 +25,19 @@ export const events = [
         mobile: "7389640607",
       },
     ],
+    timeline:[
+      {
+        date:" April 4,2022",
+        desc:"ps release",
+      },
+      {
+        date:" April 11,2022",
+        desc:"workshop",
+      },
+      
+      
+
+    ]
   },
   {
     name: "Take de-Bait",
@@ -43,6 +56,20 @@ export const events = [
         mobile: "9324107574",
       },
     ],
+
+    timeline:[
+      {
+        date:" April 4,2022",
+        desc:"ps release",
+      },
+      {
+        date:" April 11,2022",
+        desc:"workshop",
+      },
+      
+      
+
+    ]
   },
   {
     name: "Social Innovation Challenge (SIC)",
@@ -62,6 +89,19 @@ export const events = [
         mobile: "9702657856",
       },
     ],
+    timeline:[
+      {
+        date:" April 4,2022",
+        desc:"ps release",
+      },
+      {
+        date:" April 11,2022",
+        desc:"workshop",
+      },
+      
+      
+
+    ]
   },
   {
     name: "Case Study",
@@ -80,6 +120,19 @@ export const events = [
         mobile: "9640832040",
       },
     ],
+    timeline:[
+      {
+        date:" April 4,2022",
+        desc:"ps release",
+      },
+      {
+        date:" April 11,2022",
+        desc:"workshop",
+      },
+      
+      
+
+    ]
   },
   {
     name: "Jog to Donate (J2D)",
@@ -95,6 +148,19 @@ export const events = [
         mobile: "9354030965",
       },
     ],
+    timeline:[
+      {
+        date:" April 4,2022",
+        desc:"ps release",
+      },
+      {
+        date:" April 11,2022",
+        desc:"workshop",
+      },
+      
+      
+
+    ]
   },
 ];
 

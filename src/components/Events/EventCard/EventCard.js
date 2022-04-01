@@ -49,11 +49,14 @@ const EventCard = ({ event, cardNumber }) => {
                 <div id='contacts' onClick={() => setCurrentTab('contacts')}>
                   Contacts
                 </div>
+                <div id='timeline' onClick={() => setCurrentTab('timeline')}>
+                  Timeline
+                </div>
               </div>
               <div
                 className={`card-text event-text cardText ${
-                  currentTab === 'contacts' ? 'cardContactsText' : ''
-                }`}
+                  currentTab === 'contacts' ? 'cardContactsText' 
+                  : currentTab === 'timeline' ?'cardContactsText ':''}` }
               >
                 {currentTab === 'overview'
                   ? event?.content
@@ -64,7 +67,15 @@ const EventCard = ({ event, cardNumber }) => {
                         <div className='contactNumber'>{contact?.mobile}</div>
                       </div>
                     ))
-                  : ''}
+                  : currentTab === 'timeline'
+                  ? event?.timeline.map((timeline,index)=>(
+                    <div className='timelineContent'>
+                        <div className='timelineDate'>{timeline?.date}</div>
+                        <div className='timelineDesc'>{timeline?.desc}</div>
+                      </div>
+                    
+                  ))
+                 : '' }
               </div>
               <div className='eventButtons'>
                 {event?.registrationLink ? (
