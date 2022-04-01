@@ -130,9 +130,7 @@ export const events = [
         desc:"workshop",
       },
       
-      
-
-    ]
+      ]
   },
   {
     name: "Jog to Donate (J2D)",

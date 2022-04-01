@@ -294,7 +294,7 @@ header #menu-btn:hover {
     top: 67px;
     opacity: 1;
     pointer-events: all;
-    background: rgba(223, 112, 40, 0.9);
+    background: #f2c8a2;
   }
 
   .navbarLight {
