@@ -176,13 +176,16 @@ export const announcements = [
     heading: "Problem Statement Release",
     description:
       "lorem lorem lorem lorem loremloremlorem lorem lorem lorem lorem lorem lorem lorem loremloremlorem lorem lorem lorem lorem lorem lorem lorem loremloremlorem lorem lorem lorem lorem lorem lorem lorem loremloremlorem lorem lorem lorem0",
-    date: 'April 1, 2022'
+    date: 'April 1, 2022',
+    color: 'blue',
+
   },
   {
     event: "Share a Skill",
     heading: "Problem Statement Release",
     description:
       "lorem lorem lorem lorem loremloremlorem lorem lorem lorem lorem lorem lorem lorem loremloremlorem lorem lorem lorem lorem lorem lorem lorem loremloremlorem lorem lorem lorem lorem lorem lorem lorem loremloremlorem lorem lorem lorem0",
-    date: 'April 1, 2022'
+    date: 'April 1, 2022',
+    color: 'purple',
   },
 ];
