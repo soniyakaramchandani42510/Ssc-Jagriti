@@ -10,7 +10,7 @@ import Testimonial from './components/Testimonial/Testimonial'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Throwback from './components/Throwback/Throwback'
 import Faqs from './components/Faqs/Faqs'
-// import Announcements from './components/Announcements/Announcements'
+import Announcements from './components/Announcements/Announcements'
 
 function App() {
   const [timerDays, setTimerDays] = useState()
@@ -85,14 +85,14 @@ function App() {
             <Footer />
           </Route>
 
-          {/* <Route path='/announcements'>
+          <Route path='/announcements'>
             <Navbar navbarInvisible />
             <Announcements />
             <Footer />
-          </Route> */}
+          </Route>
 
           <Route path='/'>
-            <Navbar />
+            <Navbar navbarLight />
             <Home />
             <Clock
               timerDays={timerDays}
