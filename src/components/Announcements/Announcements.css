@@ -58,3 +58,15 @@
         padding: 20px;
     }
 }
+@media screen and (max-width: 400px){
+    .announcementEventName{
+        width: 100% !important;
+        flex-wrap: wrap !important;
+        margin-bottom: 19px !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    .announcementDate{
+        margin-left: 45px !important;
+    }
+}

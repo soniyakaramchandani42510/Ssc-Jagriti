@@ -40,9 +40,9 @@ function Events(props) {
               <div className="col-sm" id='overview' onClick={overView}>
               Overview
               </div>
-              <div className="col-sm" id='timeline' onClick={timeLine}>
+              {/* <div className="col-sm" id='timeline' onClick={timeLine}>
               Timeline
-              </div>
+              </div> */}
               <div className="col-sm" id='contacts' onClick={contacts}>
               Contacts
               </div>
