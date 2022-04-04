@@ -164,28 +164,28 @@ export const events = [
 
 export const announcements = [
   {
-    event: "Share a Skill",
-    heading: "Problem Statement Release",
+    event: "Social Innovation Challenge",
+    heading: "PS Release & Abstract Submission Deadline",
     description:
-      "lorem lorem lorem lorem loremloremlorem lorem lorem lorem lorem lorem lorem lorem loremloremlorem lorem lorem lorem lorem lorem lorem lorem loremloremlorem lorem lorem lorem lorem lorem lorem lorem loremloremlorem lorem lorem lorem0",
-    date: 'April 1, 2022',
+      "The PS for the event - Social Innovation Challenge - will be released on April 4, 2022. Abstract submission deadline for the same would be April 10, 2022 (EOD).",
+    date: 'April 4, 2022',
     color: 'green',
   },
   {
-    event: "Share a Skill",
-    heading: "Problem Statement Release",
+    event: " Take de-Bait",
+    heading: "Slot allotment & Round 1",
     description:
-      "lorem lorem lorem lorem loremloremlorem lorem lorem lorem lorem lorem lorem lorem loremloremlorem lorem lorem lorem lorem lorem lorem lorem loremloremlorem lorem lorem lorem lorem lorem lorem lorem loremloremlorem lorem lorem lorem0",
-    date: 'April 1, 2022',
+      "The slots for the event - Take de-Bait - will be alloted to all the participants by April 6, 2022. Round 1 will begin from April 7, 2022.",
+    date: 'April 4, 2022',
     color: 'blue',
 
   },
   {
-    event: "Share a Skill",
-    heading: "Problem Statement Release",
+    event: "Jog To Donate",
+    heading: "Event Dates",
     description:
-      "lorem lorem lorem lorem loremloremlorem lorem lorem lorem lorem lorem lorem lorem loremloremlorem lorem lorem lorem lorem lorem lorem lorem loremloremlorem lorem lorem lorem lorem lorem lorem lorem loremloremlorem lorem lorem lorem0",
-    date: 'April 1, 2022',
+      "The event - Jog 2 Donate - will run from April 11, 2022 to April 13, 2022.",
+    date: 'April 4, 2022',
     color: 'purple',
   },
 ];
