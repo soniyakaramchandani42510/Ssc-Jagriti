@@ -19,6 +19,7 @@ const Announcements = () => {
           </div>
           <div className="announcementHeading">{data.heading}</div>
           <div className="announcementDescription">{data.description}</div>
+          <div className="announcementLinks">{data.links?.map(link => <a className="label" href={link.href} target="_blank">{link.label}</a>)}</div>
         </div>
       ))}
     </div>

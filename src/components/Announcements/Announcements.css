@@ -70,3 +70,12 @@
         margin-left: 45px !important;
     }
 }
+.label{
+    color: blue;
+    text-decoration: none;
+    padding-right: 15px;
+    font-size: medium;
+}
+.announcementLinks{
+    margin-top: 7px;
+}

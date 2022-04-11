@@ -172,8 +172,26 @@ export const announcements = [
     event: "Social Innovation Challenge",
     heading: "Workshop on Design Thinking",
     description:
-      "The first workshop for the SIC event qould be held on April 11,2020 at 6:00 PM.",
+      "The first workshop for the SIC event would be held on April 11,2020 at 6:00 PM.",
     date: 'April 11, 2022',
+    color: 'green',
+    links: [{
+      label: "Facebook",href: " http://shorturl.at/qxBD4"
+    },
+  {
+    label: "Instagram", href: " http://shorturl.at/hjD27"
+  },
+  {
+    label: "Linkedin", href: "http://shorturl.at/jwO01"
+  }
+],
+  },
+  {
+    event: "Social Innovation Challenge",
+    heading: "PS Release & Abstract Submission Deadline",
+    description:
+      "The PS for the event - Social Innovation Challenge - will be released on April 4, 2022. Abstract submission deadline for the same would be April 10, 2022 (EOD).",
+    date: 'April 4, 2022',
     color: 'green',
   },
   {
