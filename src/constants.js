@@ -6,6 +6,9 @@ import socialInnovationChallengeImage from "./Assets/socialInnovationChallenge.p
 import socialInnovationChallengeMobileImage from "./Assets/socialInnovationChallengeMobile.png";
 import UthaanImage from "./Assets/Uthaan.png";
 import UthaanMobileImage from "./Assets/UthaanMobile.png";
+import JogToImage from "./Assets/JogTo.png";
+import JogToMobileImage from "./Assets/JogToMobile.png";
+
 
 export const events = [
   {
@@ -136,14 +139,16 @@ export const events = [
     name: "Jog to Donate (J2D)",
     content:
       "Jog to Donate helps do good for the people while also keeping your physical health at the focus. J2D is a pre-event where participants walk a certain number of steps and donate a certain amount. The amount donated will be collected to the account of the Social Service Council, IIT BHU or the NGO for a social cause that can be solved. ",
+      image: JogToMobileImage,
+    imageMobile: JogToImage,
     contacts: [
       {
-        name: "Akshat Khanna",
-        mobile: "6261683166",
+        name: "Lavi",
+        mobile: "7732850042",
       },
       {
-        name: "Pranav Verma",
-        mobile: "9354030965",
+        name: "Abhishek",
+        mobile: "8092902979",
       },
     ],
     timeline:[
@@ -165,10 +170,10 @@ export const events = [
 export const announcements = [
   {
     event: "Social Innovation Challenge",
-    heading: "PS Release & Abstract Submission Deadline",
+    heading: "Workshop on Design Thinking",
     description:
-      "The PS for the event - Social Innovation Challenge - will be released on April 4, 2022. Abstract submission deadline for the same would be April 10, 2022 (EOD).",
-    date: 'April 4, 2022',
+      "The first workshop for the SIC event qould be held on April 11,2020 at 6:00 PM.",
+    date: 'April 11, 2022',
     color: 'green',
   },
   {
