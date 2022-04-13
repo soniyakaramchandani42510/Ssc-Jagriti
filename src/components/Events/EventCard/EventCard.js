@@ -84,7 +84,7 @@ const EventCard = ({ event, cardNumber }) => {
                   </a>
                 ) : (
                   <button className='disabledBtn'>
-                    {'Registration: Opens soon!'}
+                    {'Registrations Closed!'}
                   </button>
                 )}
               </div>

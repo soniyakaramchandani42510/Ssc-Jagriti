@@ -38,6 +38,9 @@ function Navbar({ navbarInvisible, navbarWhite, navbarLight }) {
           <a className="nav-link" href="/announcements">
             Announcements
           </a>
+          <a className="nav-link" href="/timeline">
+            Timeline
+          </a>
         </div>
       </nav>
     </div>

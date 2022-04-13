@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Throwback from './components/Throwback/Throwback'
 import Faqs from './components/Faqs/Faqs'
 import Announcements from './components/Announcements/Announcements'
+import Timeline from './components/Timeline/Timeline'
 
 function App() {
   const [timerDays, setTimerDays] = useState()
@@ -88,6 +89,12 @@ function App() {
           <Route path='/announcements'>
             <Navbar navbarInvisible />
             <Announcements />
+            <Footer />
+          </Route>
+
+          <Route path='/timeline'>
+            <Navbar navbarInvisible />
+            <Timeline />
             <Footer />
           </Route>
 
