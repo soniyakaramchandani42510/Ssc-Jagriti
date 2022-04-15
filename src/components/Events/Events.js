@@ -1,25 +1,26 @@
-import React, { useState } from 'react'
-import { useLocation } from 'react-router-dom'
-import './Events.css'
-import { events } from '../../constants'
-import EventCard from './EventCard/EventCard'
+import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
+import "./Events.css";
+import { events } from "../../constants";
+import EventCard from "./EventCard/EventCard";
+import GuestTalk from "../GuestTalk/GuestTalk";
 function Events(props) {
-  const { search } = useLocation()
-  const isGuestTalk = new URLSearchParams(search)?.get('guestTalks')
+  const { search } = useLocation();
+  const isGuestTalk = new URLSearchParams(search)?.get("guestTalks");
   const [currentPage, setCurrentPage] = useState(
-    isGuestTalk ? 'guestTalks' : 'competitions'
-  )
+    isGuestTalk ? "guestTalks" : "competitions"
+  );
 
   return (
-    <div className='eventsOuter'>
+    <div className="eventsOuter">
       {/* main logic */}
-      <div className='events'>
-        <div className='eventsButton'>
+      <div className="events">
+        <div className="eventsButton">
           <button
             className={`competitionsBtn ${
-              currentPage === 'competitions' ? 'btnActive' : ''
+              currentPage === "competitions" ? "btnActive" : ""
             }`}
-            onClick={() => setCurrentPage('competitions')}
+            onClick={() => setCurrentPage("competitions")}
           >
             Competitions
           </button>
@@ -27,17 +28,17 @@ function Events(props) {
           <div>
             <button
               className={`competitionsBtn ${
-                currentPage === 'guestTalks' ? 'btnActive' : ''
+                currentPage === "guestTalks" ? "btnActive" : ""
               }`}
-              onClick={() => setCurrentPage('guestTalks')}
+              onClick={() => setCurrentPage("guestTalks")}
             >
               Guest Talks
               {/* <span>Coming soon!</span> */}
             </button>
           </div>
         </div>
-        <p className='para'>
-          {currentPage === 'competitions'
+        <p className="para">
+          {currentPage === "competitions"
             ? `What sets Jagriti Apart from others are the out of the box events and
           problem statements that we provide to the participants. In this
           edition we have events ranging from Jog 2 Donate, an event where you
@@ -50,8 +51,8 @@ Our guests are prodigious social entrepreneurs and social workers, here to speak
 `}
         </p>
       </div>
-      {currentPage === 'competitions' && (
-        <div id='eventCards'>
+      {currentPage === "competitions" && (
+        <div id="eventCards">
           <h1>Competitions</h1>
           {events.map((event, index) => (
             <EventCard
@@ -62,20 +63,20 @@ Our guests are prodigious social entrepreneurs and social workers, here to speak
           ))}
         </div>
       )}
-      {currentPage === 'guestTalks' && (
-        <div id='eventCards'>
+      {currentPage === "guestTalks" && (
+        <div id="eventCards">
           <h1>Guest Talks</h1>
-          <div className='guestTalksDescription'>
+          {/* <div className='guestTalksDescription'>
             More details will be released soon!
-          </div>
+          </div> */}
+          <GuestTalk />
         </div>
       )}
-      {/* template */}
     </div>
-  )
+  );
 }
 Events.defaultProps = {
   events: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempore consequuntur distinctio enim velit minima et sunt quas quibusdam, animi consectetur error pariatur soluta. Odit iste nemo officia numquam ut!`,
-}
+};
 
-export default Events
+export default Events;

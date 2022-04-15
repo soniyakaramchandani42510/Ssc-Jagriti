@@ -1,52 +1,24 @@
-import React from 'react'
-import './guesttalk.css'
+import React from "react";
+import "./guesttalk.css";
+
+import poster1Image from "../../Assets/Poster1.jpeg";
+import poster2Image from "../../Assets/Poster2.jpeg";
+import poster3Image from "../../Assets/Poster3.jpeg";
 
 function GuestTalk() {
   return (
-      <>
-   
-    <div class="main">
-  <h1 className='hello'>GuestTalk</h1>
-  <ul class="cards">
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img className="photo" src="https://picsum.photos/500/300/?image=10"/></div>
-        <div class="card_content">
-          <h2 class="card_title">Card Grid Layout</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button class="btn card_btn">Register Now</button>
-        </div>
+    <div className="guestTalksOuter">
+      <div className="guestTalksInner">
+        <img src={poster1Image} alt="Guest Talk Poster 1" />
       </div>
-    </li>
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img className="photo" src="https://picsum.photos/500/300/?image=5"/></div>
-        <div class="card_content">
-          <h2 class="card_title">Card Grid Layout</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button class="btn card_btn">Register Now</button>
-        </div>
+      <div className="guestTalksInner">
+        <img src={poster2Image} alt="Guest Talk Poster 2" />
       </div>
-    </li>
-    
-   
-    
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img className="photo" src="https://picsum.photos/500/300/?image=2"/></div>
-        <div class="card_content">
-          <h2 class="card_title">Card Grid Layout</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button class="btn card_btn">Register Now</button>
-        </div>
+      <div className="guestTalksInner">
+        <img src={poster3Image} alt="Guest Talk Poster 3" />
       </div>
-    </li>
-  </ul>
-</div>
-
-
-    </>
-  )
+    </div>
+  );
 }
 
-export default GuestTalk
+export default GuestTalk;
