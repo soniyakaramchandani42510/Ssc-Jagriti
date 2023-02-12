@@ -3,8 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Home from "./components/Home";
-
-import Workshops from "./components/Workshops";
+// import Workshops from "./components/Workshops";
 import React, { useEffect, useState } from "react";
 import Clock from "./components/Clock";
 import Events from "./components/Events";
@@ -28,7 +27,7 @@ function App() {
   let interval;
 
   const startTimer = () => {
-    const countDownDate = new Date("April 16,2022 ").getTime();
+    const countDownDate = new Date("April 7,2023 ").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -65,8 +64,6 @@ function App() {
 
   function overView(){
     console.log("timeline");
-    
-
   }
   function timeLine(){
     console.log("timeline");

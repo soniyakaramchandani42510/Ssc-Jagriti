@@ -3,8 +3,8 @@ import "./Workshops.css";
 function Workshops() {
   return (
     <>
-  
-</>
+    <h1>workshop</h1>
+    </>
   )
 }
 
